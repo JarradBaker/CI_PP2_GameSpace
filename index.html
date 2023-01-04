@@ -21,7 +21,15 @@
     </header>
 
     <div class="game-container">
-        <div id="question-container" class="hidden">
+
+        <div class="start-menu">
+            <button id="hiScores" class="btn-menu">HiScores</button>
+            <button id="about-button" class="btn-menu">Instructions</button>
+            <h1>General Knowledge Quiz</h1>
+            <button id="start-button" class="btn">Start</button>
+        </div>
+
+        <div id="main-quiz" class="hidden">
             <div id="scores">
                 <span id="correct" class="score"></span>
                 <span id="incorrect" class="score"></span>
@@ -34,10 +42,11 @@
                 <button class="btn">Answer 4</button>
             </div>
         </div>
-        <div class="game-controls">
-            <button id="start-button" class="btn">Start</button>
-            <button id="next-button" class="btn hidden">Next</button>
+
+        <div id="game-over" class="hidden">
+
         </div>
+        
     </div>
 
     <script src="assets/js/quiz.js"></script>
