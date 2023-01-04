@@ -10,11 +10,43 @@ body {
 }
 
 header {
-    height: 100px;
+    height: 60px;
+    padding: auto 0;
+    border: solid red 2px;
+    padding: 18px 0;
 }
 
+header nav {
+    
+}
 
+header nav ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+header nav ul li {
+    justify-self: center;
+    align-self: center;
+}
+
+header nav ul li a {
+    text-decoration: none;
+}
 
 .hidden {
     display: none;
+}
+
+
+#start-menu {
+    width: 100vw;
+}
+
+#start-menu #menu-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    border: solid green 2px;
 }
