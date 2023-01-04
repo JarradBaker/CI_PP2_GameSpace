@@ -50,3 +50,13 @@ header nav ul li a {
     padding: 10px 10px;
     border: solid green 2px;
 }
+
+#start-menu #menu-buttons button {
+    height: 100%;
+}
+
+#start-menu #question-area {
+    height: 300px;
+    text-align: center;
+    border: solid blue 2px;
+}
