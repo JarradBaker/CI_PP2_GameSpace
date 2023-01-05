@@ -39,8 +39,14 @@ header nav ul li a {
     display: none;
 }
 .btn {
-    background-color: #53354A;
-    border-radius: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    color: #FF0000;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+.big-txt {
+    color: #FFF000
 }
 
 
@@ -48,7 +54,7 @@ header nav ul li a {
 
 #start-menu {
     width: 100vw;
-    background-color: #FF0000;
+    background-color: #000000;
 }
 
 #start-menu #menu-buttons {
