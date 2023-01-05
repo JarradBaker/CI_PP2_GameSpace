@@ -38,10 +38,17 @@ header nav ul li a {
 .hidden {
     display: none;
 }
+.btn {
+    background-color: #53354A;
+    border-radius: 20px;
+}
+
+
 
 
 #start-menu {
     width: 100vw;
+    background-color: #FF0000;
 }
 
 #start-menu #menu-buttons {
@@ -52,11 +59,25 @@ header nav ul li a {
 }
 
 #start-menu #menu-buttons button {
-    height: 100%;
+    height: 30px;
 }
 
 #start-menu #question-area {
     height: 300px;
     text-align: center;
     border: solid blue 2px;
+    display: flex;
+    align-items: center;
+}
+
+#start-menu #start-button-area {
+    border: solid black 2px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+}
+
+#start-menu #start-button-area button {
+    height: 50px;
+    width: 100px;
 }
