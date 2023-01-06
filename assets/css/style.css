@@ -43,7 +43,8 @@ header nav ul li a {
     border-radius: 10px;
     color: #FF0000;
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+    padding: 3px;
 }
 .big-txt {
     color: #FFF000
@@ -60,7 +61,8 @@ header nav ul li a {
 #start-menu #menu-buttons {
     display: flex;
     justify-content: space-between;
-    padding: 10px 10px;
+    align-items: center;
+    height: 50px;
     border: solid green 2px;
 }
 
@@ -80,10 +82,21 @@ header nav ul li a {
     border: solid black 2px;
     display: flex;
     justify-content: center;
-    padding: 10px 10px;
+    height: 70px;
+    align-items: center;
 }
 
 #start-menu #start-button-area button {
     height: 50px;
     width: 100px;
+}
+
+
+
+#main-quiz #question {
+    height: 300px;
+    text-align: center;
+    border: solid blue 2px;
+    display: flex;
+    align-items: center;
 }
