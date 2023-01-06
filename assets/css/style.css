@@ -9,6 +9,9 @@ body {
     
 }
 
+/*************************/
+/*  HEADER AND NAV BAR   */
+/*************************/
 header {
     height: 60px;
     padding: auto 0;
@@ -35,6 +38,10 @@ header nav ul li a {
     text-decoration: none;
 }
 
+
+ /*************************/
+ /*    UTILITY CLASSES    */
+ /*************************/
 .hidden {
     display: none;
 }
@@ -52,7 +59,9 @@ header nav ul li a {
 
 
 
-
+/*************************/
+/* QUIZ START MENU STATE */
+/*************************/
 #start-menu {
     width: 100vw;
     background-color: #000000;
@@ -93,6 +102,10 @@ header nav ul li a {
 
 
 
+
+/************************/
+/* QUIZ MAIN GAME STATE */
+/************************/
 #main-quiz #question {
     height: 300px;
     text-align: center;
