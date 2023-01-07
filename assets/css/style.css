@@ -106,10 +106,33 @@ header nav ul li a {
 /************************/
 /* QUIZ MAIN GAME STATE */
 /************************/
+#main-quiz {
+    width: 100vw;
+    background-color: #000000;
+}
 #main-quiz #question {
     height: 300px;
     text-align: center;
     border: solid blue 2px;
     display: flex;
     align-items: center;
+    color: #FFF000;
+}
+
+
+
+#main-quiz #answer-buttons {
+    border: solid black 2px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 70px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+#main-quiz #answer-buttons .btn {
+    height: 100%;
+    border-radius: 0;
+    
 }
