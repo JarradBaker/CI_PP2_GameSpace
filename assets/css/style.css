@@ -36,6 +36,8 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
+    color: #FF0000;
+    font-weight: bold;
 }
 
 
@@ -110,6 +112,16 @@ header nav ul li a {
     width: 100vw;
     background-color: #000000;
 }
+
+#main-quiz #scores {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border: solid green 2px;
+    color: #FFF000;
+}
+
 #main-quiz #question {
     height: 300px;
     text-align: center;
@@ -130,7 +142,6 @@ header nav ul li a {
     padding: 0;
     margin: 0;
 }
-
 #main-quiz #answer-buttons .btn {
     height: 100%;
     border-radius: 0;
