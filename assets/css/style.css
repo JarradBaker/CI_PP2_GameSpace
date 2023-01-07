@@ -15,7 +15,6 @@ body {
 header {
     height: 60px;
     padding: auto 0;
-    border: solid red 2px;
     padding: 18px 0;
 }
 
@@ -55,6 +54,9 @@ header nav ul li a {
     font-size: 1.1rem;
     padding: 3px;
 }
+.btn:hover {
+    border: solid #FF0000 2px;
+}
 .big-txt {
     color: #FFF000
 }
@@ -74,7 +76,6 @@ header nav ul li a {
     justify-content: space-between;
     align-items: center;
     height: 50px;
-    border: solid green 2px;
 }
 
 #start-menu #menu-buttons button {
@@ -84,7 +85,6 @@ header nav ul li a {
 #start-menu #question-area {
     height: 300px;
     text-align: center;
-    border: solid blue 2px;
     display: flex;
     align-items: center;
 }
@@ -118,23 +118,22 @@ header nav ul li a {
     justify-content: space-between;
     align-items: center;
     height: 50px;
-    border: solid green 2px;
     color: #FFF000;
+    padding: 0 5px;
+    font-weight: bold;
 }
 
 #main-quiz #question {
     height: 300px;
     text-align: center;
-    border: solid blue 2px;
     display: flex;
     align-items: center;
-    color: #FFF000;
+    justify-content: center;
 }
 
 
-
 #main-quiz #answer-buttons {
-    border: solid black 2px;
+    /* border: solid black 2px; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 70px;
