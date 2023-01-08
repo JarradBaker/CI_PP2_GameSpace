@@ -1,7 +1,11 @@
+// Declaring and assigning the main constants for the different
+// game states.
 const startMenu = document.getElementById('start-menu');
 const mainQuiz = document.getElementById('main-quiz');
 const gameOver = document.getElementById('game-over');
 
+// Declaring and assigning the different elements of the game
+// that will be interacted with.
 const answerOne = document.getElementById('answer-one');
 const answerTwo = document.getElementById('answer-two');
 const answerThree = document.getElementById('answer-three');
@@ -10,6 +14,7 @@ const correctScore = document.getElementById('correct-score');
 const incorrectScore = document.getElementById('incorrect-score');
 const question = document.getElementById('question');
 const startBtn = document.getElementById('start-button');
+
 const answerButtons = answerOne || answerTwo || answerThree || answerFour;
 
 startBtn.addEventListener('click', startQuiz);
@@ -17,7 +22,10 @@ answerButtons.addEventListener('click', checkAnswer);
 
 
 
-
+/**
+ * Hides the start menu, and shows the main game window,
+ * then runs the nextQuestion function.
+ */
 function startQuiz() {
     console.log('Started')
     startMenu.classList.add('hidden');
@@ -25,6 +33,11 @@ function startQuiz() {
     nextQuestion();
 }
 
+/**
+ * Gets a random number, and uses that to determine which
+ * question and answers are shown. Outputs the question and
+ * answers to the h1 and buttons.
+ */
 function nextQuestion() {
     let randomNum = Math.floor(Math.random() * 10);
     question.innerText = questions[randomNum].question;
@@ -36,9 +49,14 @@ function nextQuestion() {
 }
 
 function checkAnswer() {
-    
+    let correctAnswer
 }
 
+/**
+ * Array of objects, each object has a question, and
+ * an array of objects containing the question text, and 
+ * whether that text is the correct answer of the four.
+ */
 const questions = [
     {
         question: 'What is Superman weak to?',
