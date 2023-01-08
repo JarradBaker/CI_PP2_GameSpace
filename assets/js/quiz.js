@@ -1,16 +1,21 @@
 const startMenu = document.getElementById('start-menu');
 const mainQuiz = document.getElementById('main-quiz');
 const gameOver = document.getElementById('game-over');
+
 const answerOne = document.getElementById('answer-one');
 const answerTwo = document.getElementById('answer-two');
 const answerThree = document.getElementById('answer-three');
 const answerFour = document.getElementById('answer-four');
-
-
-
-const startBtn = document.getElementById('start-button');
-startBtn.addEventListener('click', startQuiz);
+const correctScore = document.getElementById('correct-score');
+const incorrectScore = document.getElementById('incorrect-score');
 const question = document.getElementById('question');
+const startBtn = document.getElementById('start-button');
+const answerButtons = answerOne || answerTwo || answerThree || answerFour;
+
+startBtn.addEventListener('click', startQuiz);
+answerButtons.addEventListener('click', checkAnswer);
+
+
 
 
 function startQuiz() {
@@ -28,6 +33,10 @@ function nextQuestion() {
     answerThree.innerText = questions[randomNum].answers[2].text;
     answerFour.innerText = questions[randomNum].answers[3].text;
     console.log(randomNum);
+}
+
+function checkAnswer() {
+    
 }
 
 const questions = [
