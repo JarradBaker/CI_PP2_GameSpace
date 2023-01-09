@@ -73,7 +73,7 @@ function incrementCorrectScore() {
 
 function decrementLifeScore() {
     --life;
-    if(life < 0) {
+    if(life <= 0) {
         endGame();
     } else {
         lifeScore.innerText = life;
