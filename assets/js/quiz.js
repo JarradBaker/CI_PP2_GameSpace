@@ -11,7 +11,7 @@ const answerTwo = document.getElementById('answer-two');
 const answerThree = document.getElementById('answer-three');
 const answerFour = document.getElementById('answer-four');
 const correctScore = document.getElementById('correct-score');
-const incorrectScore = document.getElementById('incorrect-score');
+const lifeScore = document.getElementById('life-score');
 const question = document.getElementById('question');
 const startBtn = document.getElementById('start-button');
 
@@ -23,7 +23,7 @@ answerFour.addEventListener('click', checkAnswer);
 
 let randomNum;
 let correctScoreValue = 0;
-let incorrectScoreValue = 0;
+let life = 3;
 
 /**
  * Hides the start menu, and shows the main game window,
@@ -33,6 +33,8 @@ function startQuiz() {
     console.log('Started')
     startMenu.classList.add('hidden');
     mainQuiz.classList.remove('hidden');
+    correctScore.innerText = correctScoreValue; 
+    lifeScore.innerText = life;
     nextQuestion();
 }
 
@@ -59,7 +61,7 @@ function checkAnswer() {
         nextQuestion();
     } else {
         console.log("the answer is incorrect")
-        incrementIncorrectScore();
+        decrementLifeScore();
         nextQuestion();
     }
 }
@@ -69,9 +71,18 @@ function incrementCorrectScore() {
     correctScore.innerText = correctScoreValue; 
 }
 
-function incrementIncorrectScore() {
-    ++incorrectScoreValue;
-    incorrectScore.innerText = incorrectScoreValue;
+function decrementLifeScore() {
+    --life;
+    if(life < 0) {
+        endGame();
+    } else {
+        lifeScore.innerText = life;
+    }
+}
+
+function endGame() {
+    mainQuiz.classList.add('hidden');
+    gameOver.classList.remove('hidden');
 }
 
 /**
