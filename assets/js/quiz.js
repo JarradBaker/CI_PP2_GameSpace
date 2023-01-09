@@ -15,13 +15,15 @@ const incorrectScore = document.getElementById('incorrect-score');
 const question = document.getElementById('question');
 const startBtn = document.getElementById('start-button');
 
-const answerButtons = answerOne || answerTwo || answerThree || answerFour;
-
 startBtn.addEventListener('click', startQuiz);
-answerButtons.addEventListener('click', checkAnswer);
+answerOne.addEventListener('click', checkAnswer);
+answerTwo.addEventListener('click', checkAnswer);
+answerThree.addEventListener('click', checkAnswer);
+answerFour.addEventListener('click', checkAnswer);
 
 let randomNum;
-
+let correctScoreValue = 0;
+let incorrectScoreValue = 0;
 
 /**
  * Hides the start menu, and shows the main game window,
@@ -52,12 +54,24 @@ function nextQuestion() {
 function checkAnswer() {
     let correctAnswer = questions[randomNum].correct;
     if(this.innerText === correctAnswer) {
-        //increment correct score
-        //nextQuestion
+        console.log("the answer is correct")
+        incrementCorrectScore();
+        nextQuestion();
     } else {
-        //increment incorrect score
-        //nextQuestion
+        console.log("the answer is incorrect")
+        incrementIncorrectScore();
+        nextQuestion();
     }
+}
+
+function incrementCorrectScore() {
+    ++correctScoreValue;
+    correctScore.innerText = correctScoreValue; 
+}
+
+function incrementIncorrectScore() {
+    ++incorrectScoreValue;
+    incorrectScore.innerText = incorrectScoreValue;
 }
 
 /**
