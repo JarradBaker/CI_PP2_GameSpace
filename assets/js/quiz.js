@@ -20,6 +20,7 @@ const answerButtons = answerOne || answerTwo || answerThree || answerFour;
 startBtn.addEventListener('click', startQuiz);
 answerButtons.addEventListener('click', checkAnswer);
 
+let randomNum;
 
 
 /**
@@ -39,7 +40,7 @@ function startQuiz() {
  * answers to the h1 and buttons.
  */
 function nextQuestion() {
-    let randomNum = Math.floor(Math.random() * 10);
+    randomNum = Math.floor(Math.random() * 10);
     question.innerText = questions[randomNum].question;
     answerOne.innerText = questions[randomNum].answers[0].text;
     answerTwo.innerText = questions[randomNum].answers[1].text;
@@ -49,7 +50,14 @@ function nextQuestion() {
 }
 
 function checkAnswer() {
-    let correctAnswer
+    let correctAnswer = questions[randomNum].correct;
+    if(this.innerText === correctAnswer) {
+        //increment correct score
+        //nextQuestion
+    } else {
+        //increment incorrect score
+        //nextQuestion
+    }
 }
 
 /**
@@ -61,91 +69,101 @@ const questions = [
     {
         question: 'What is Superman weak to?',
         answers: [
-            { text: "Kryptonite", correct: true },
-            { text: "Mithril", correct: false },
-            { text: "Adamantium", correct: false },
-            { text: "Steel", correct: false },
-        ]
+            { text: "Kryptonite" },
+            { text: "Mithril" },
+            { text: "Adamantium" },
+            { text: "Steel" }
+        ],
+        correct: 'Kryptonite'
     },
     {
         question: 'What Hogwarts house is Harry Potter in?',
         answers: [
-            { text: "Slytherin", correct: false },
-            { text: "Hufflepuff", correct: false },
-            { text: "Gryffindor", correct: true },
-            { text: "Ravenclaw", correct: false },
-        ]
+            { text: "Slytherin" },
+            { text: "Hufflepuff" },
+            { text: "Gryffindor" },
+            { text: "Ravenclaw" }
+        ],
+        correct: 'Gryffindor'
     },
     {
         question: 'What is the capital of Finland?',
         answers: [
-            { text: "Espoo", correct: false },
-            { text: "Helsinki", correct: true },
-            { text: "Turku", correct: false },
-            { text: "Porvoo", correct: false },
-        ]
+            { text: "Espoo" },
+            { text: "Helsinki" },
+            { text: "Turku" },
+            { text: "Porvoo" }
+        ],
+        correct: 'Helsinki'
     },
     {
         question: 'In which decade was Madonna born?',
         answers: [
-            { text: "1950s", correct: true },
-            { text: "1940s", correct: false },
-            { text: "1960s", correct: false },
-            { text: "1930s", correct: false },
-        ]
+            { text: "1950s" },
+            { text: "1940s" },
+            { text: "1960s" },
+            { text: "1930s" }
+        ],
+        correct: '1950s'
     },
     {
         question: 'Which country is brie cheese originally from?',
         answers: [
-            { text: "Russia", correct: true },
-            { text: "Sweeden", correct: false },
-            { text: "Italy", correct: false },
-            { text: "France", correct: true },
-        ]
+            { text: "Russia" },
+            { text: "Sweeden" },
+            { text: "Italy" },
+            { text: "France" }
+        ],
+        correct: 'France'
     },
     {
         question: 'What is the capital of Iceland?',
         answers: [
-            { text: "Selfoss", correct: false },
-            { text: "Vik", correct: false },
-            { text: "Akureyri", correct: false },
-            { text: "Reykjavik", correct: true },
-        ]
+            { text: "Selfoss" },
+            { text: "Vik" },
+            { text: "Akureyri" },
+            { text: "Reykjavik" }
+        ],
+        correct: 'Reykjavik'
     },
     {
         question: 'Who painted the Mona Lisa?',
         answers: [
-            { text: "Da Vinci", correct: true },
-            { text: "Picasso", correct: false },
-            { text: "Van Gogh", correct: false },
-            { text: "Monet", correct: false },
-        ]
+            { text: "Da Vinci" },
+            { text: "Picasso" },
+            { text: "Van Gogh" },
+            { text: "Monet" }
+        ],
+        correct: 'Da Vinci'
     },
     {
         question: 'What is the largest country in the world?',
         answers: [
-            { text: "China", correct: false },
-            { text: "Russia", correct: true },
-            { text: "USA", correct: false },
-            { text: "South Korea", correct: false },
-        ]
+            { text: "China" },
+            { text: "Russia" },
+            { text: "USA" },
+            { text: "South Korea" }
+        ],
+        correct: 'Russia'
     },
     {
         question: 'What fruit takes the scientific name Mangifera indica?',
         answers: [
-            { text: "Mandarin", correct: false },
-            { text: "Macadamia", correct: false },
-            { text: "Mango", correct: true },
-            { text: "Melon", correct: false },
-        ]
+            { text: "Mandarin" },
+            { text: "Macadamia" },
+            { text: "Mango" },
+            { text: "Melon" }
+        ],
+        correct: 'Mango'
     },
     {
         question: 'How many sides does a heptadecagon have?',
         answers: [
-            { text: "15", correct: false },
-            { text: "17", correct: true },
-            { text: "13", correct: false },
-            { text: "19", correct: false },
-        ]
+            { text: "15" },
+            { text: "17" },
+            { text: "13" },
+            { text: "19" }
+        ],
+        correct: '17'
     }
 ]
