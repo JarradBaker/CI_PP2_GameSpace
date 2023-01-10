@@ -146,3 +146,24 @@ header nav ul li a {
     border-radius: 0;
     
 }
+
+
+/************************/
+/*   GAME OVER STATE    */
+/************************/
+
+#game-over #results {
+    height: 350px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-over #option-buttons {
+    height: 70px;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
