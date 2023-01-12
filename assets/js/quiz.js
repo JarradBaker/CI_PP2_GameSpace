@@ -17,6 +17,9 @@ const startBtn = document.getElementById('start-button');
 const playAgainBtn = document.getElementById('play-again');
 const addHiscoreBtn = document.getElementById('add-hiscore');
 const scoreOutput = document.getElementById('score-output');
+const resultsText = document.getElementById('results');
+const inputHiscore = document.getElementById('input-hiscore');
+const resultsDiv = document.getElementById('results-div');
 
 startBtn.addEventListener('click', startQuiz);
 answerOne.addEventListener('click', checkAnswer);
@@ -24,6 +27,7 @@ answerTwo.addEventListener('click', checkAnswer);
 answerThree.addEventListener('click', checkAnswer);
 answerFour.addEventListener('click', checkAnswer);
 playAgainBtn.addEventListener('click', showStartMenu);
+addHiscoreBtn.addEventListener('click', addHiscore)
 
 let randomNum;
 let correctScoreValue = 0;
@@ -96,6 +100,12 @@ function endGame() {
     mainQuiz.classList.add('hidden');
     gameOver.classList.remove('hidden');
     scoreOutput.innerText = correctScoreValue;
+}
+
+function addHiscore() {
+    resultsDiv.classList.add('hidden');
+    inputHiscore.classList.remove('hidden');
+    
 }
 
 /**
