@@ -72,11 +72,9 @@ function nextQuestion() {
 function checkAnswer() {
     let correctAnswer = questions[randomNum].correct;
     if(this.innerText === correctAnswer) {
-        console.log("the answer is correct")
         incrementCorrectScore();
         nextQuestion();
     } else {
-        console.log("the answer is incorrect")
         decrementLifeScore();
         nextQuestion();
     }
