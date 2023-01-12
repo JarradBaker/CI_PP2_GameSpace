@@ -59,7 +59,8 @@ header nav ul li a {
     border: solid #FF0000 2px;
 }
 .big-txt {
-    color: #FFF000
+    color: #FFF000;
+    font-size: 2rem;
 }
 
 
@@ -123,8 +124,9 @@ header nav ul li a {
     align-items: center;
     height: 10vh;
     color: #FFF000;
-    padding: 0 5px;
+    padding: 0 6%;
     font-weight: bold;
+    font-size: 1.25rem;
 }
 
 #main-quiz #question {
@@ -134,6 +136,7 @@ header nav ul li a {
     align-items: center;
     justify-content: center;
     color: #FFF000;
+    padding: 0 5%;
 }
 
 
