@@ -187,3 +187,9 @@ header nav ul li a {
     text-align: center;
     font-weight: bold;
 }
+
+#game-over #results #input-hiscore button {
+    width: 40%;
+    height: 50px;
+    margin-top: 20px;
+}
