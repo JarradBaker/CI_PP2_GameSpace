@@ -31,6 +31,7 @@ let life = 3;
  */
 function startQuiz() {
     console.log('Started')
+    correctScoreValue = 0;
     startMenu.classList.add('hidden');
     mainQuiz.classList.remove('hidden');
     correctScore.innerText = correctScoreValue; 
