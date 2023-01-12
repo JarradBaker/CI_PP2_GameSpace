@@ -14,16 +14,27 @@ const correctScore = document.getElementById('correct-score');
 const lifeScore = document.getElementById('life-score');
 const question = document.getElementById('question');
 const startBtn = document.getElementById('start-button');
+const playAgainBtn = document.getElementById('play-again');
+const addHiscoreBtn = document.getElementById('add-hiscore'); 
 
 startBtn.addEventListener('click', startQuiz);
 answerOne.addEventListener('click', checkAnswer);
 answerTwo.addEventListener('click', checkAnswer);
 answerThree.addEventListener('click', checkAnswer);
 answerFour.addEventListener('click', checkAnswer);
+playAgainBtn.addEventListener('click', showStartMenu);
 
 let randomNum;
 let correctScoreValue = 0;
 let life = 3;
+
+function showStartMenu() {
+    correctScoreValue = 0;
+    life = 3;
+    gameOver.classList.add('hidden');
+    startMenu.classList.remove('hidden');
+    
+}
 
 /**
  * Hides the start menu, and shows the main game window,
@@ -31,7 +42,6 @@ let life = 3;
  */
 function startQuiz() {
     console.log('Started')
-    correctScoreValue = 0;
     startMenu.classList.add('hidden');
     mainQuiz.classList.remove('hidden');
     correctScore.innerText = correctScoreValue; 
