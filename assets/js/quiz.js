@@ -15,7 +15,8 @@ const lifeScore = document.getElementById('life-score');
 const question = document.getElementById('question');
 const startBtn = document.getElementById('start-button');
 const playAgainBtn = document.getElementById('play-again');
-const addHiscoreBtn = document.getElementById('add-hiscore'); 
+const addHiscoreBtn = document.getElementById('add-hiscore');
+const scoreOutput = document.getElementById('score-output');
 
 startBtn.addEventListener('click', startQuiz);
 answerOne.addEventListener('click', checkAnswer);
@@ -94,6 +95,7 @@ function decrementLifeScore() {
 function endGame() {
     mainQuiz.classList.add('hidden');
     gameOver.classList.remove('hidden');
+    scoreOutput.innerText = correctScoreValue;
 }
 
 /**

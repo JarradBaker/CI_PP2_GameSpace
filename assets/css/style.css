@@ -6,7 +6,7 @@
 }
 
 body {
-    
+
 }
 
 /*************************/
@@ -76,6 +76,7 @@ header nav ul li a {
     justify-content: space-between;
     align-items: center;
     height: 50px;
+    padding: 0 10px;
 }
 
 #start-menu #menu-buttons button {
@@ -87,6 +88,8 @@ header nav ul li a {
     text-align: center;
     display: flex;
     align-items: center;
+    justify-content: center;
+    color: #FFF000;
 }
 
 #start-menu #start-button-area {
@@ -129,6 +132,7 @@ header nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #FFF000;
 }
 
 
