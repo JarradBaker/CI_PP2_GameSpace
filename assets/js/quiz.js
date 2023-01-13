@@ -124,7 +124,11 @@ function submitHiscore(){
         }
     } else {
         console.log("Hiscore not found for name")
+        console.log("Adding hiscore")
         localStorage.setItem(inputBox.value, correctScoreValue);
+        inputHiscore.classList.add('hidden');
+        resultsDiv.classList.remove('hidden');
+        showStartMenu();
     }
     // localStorage.setItem(inputBox.value, correctScoreValue);
     // inputHiscore.classList.add('hidden');
