@@ -19,7 +19,9 @@ const addHiscoreBtn = document.getElementById('add-hiscore');
 const scoreOutput = document.getElementById('score-output');
 const resultsText = document.getElementById('results');
 const inputHiscore = document.getElementById('input-hiscore');
+const inputBox = document.getElementById('input');
 const resultsDiv = document.getElementById('results-div');
+const submitBtn = document.getElementById('submit-score');
 
 startBtn.addEventListener('click', startQuiz);
 answerOne.addEventListener('click', checkAnswer);
@@ -28,6 +30,7 @@ answerThree.addEventListener('click', checkAnswer);
 answerFour.addEventListener('click', checkAnswer);
 playAgainBtn.addEventListener('click', showStartMenu);
 addHiscoreBtn.addEventListener('click', addHiscore)
+submitBtn.addEventListener('click', submitHiscore);
 
 let randomNum;
 let correctScoreValue = 0;
@@ -102,8 +105,13 @@ function endGame() {
 
 function addHiscore() {
     resultsDiv.classList.add('hidden');
-    inputHiscore.classList.remove('hidden');
-    
+    inputHiscore.classList.remove('hidden'); 
+}
+function submitHiscore(){
+    localStorage.setItem(inputBox.value, correctScoreValue);
+    inputHiscore.classList.add('hidden');
+    resultsDiv.classList.remove('hidden');
+    showStartMenu();
 }
 
 /**
