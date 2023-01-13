@@ -108,10 +108,28 @@ function addHiscore() {
     inputHiscore.classList.remove('hidden'); 
 }
 function submitHiscore(){
-    localStorage.setItem(inputBox.value, correctScoreValue);
-    inputHiscore.classList.add('hidden');
-    resultsDiv.classList.remove('hidden');
-    showStartMenu();
+    if(localStorage.getItem(inputBox.value)) {
+        console.log("Hiscore Exists for this name")
+        if(parseInt(localStorage.getItem(inputBox.value)) < correctScore) {
+            console.log("Score is higher than current, updating")
+            localStorage.setItem(inputBox.value, correctScoreValue);
+            inputHiscore.classList.add('hidden');
+            resultsDiv.classList.remove('hidden');
+            showStartMenu();
+        } else {
+            console.log("Score is lower, not updating")
+            inputHiscore.classList.add('hidden');
+            resultsDiv.classList.remove('hidden');
+            showStartMenu();
+        }
+    } else {
+        console.log("Hiscore not found for name")
+        localStorage.setItem(inputBox.value, correctScoreValue);
+    }
+    // localStorage.setItem(inputBox.value, correctScoreValue);
+    // inputHiscore.classList.add('hidden');
+    // resultsDiv.classList.remove('hidden');
+    // showStartMenu();
 }
 
 /**
