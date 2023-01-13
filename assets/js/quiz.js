@@ -110,7 +110,7 @@ function addHiscore() {
 function submitHiscore(){
     if(localStorage.getItem(inputBox.value)) {
         console.log("Hiscore Exists for this name")
-        if(parseInt(localStorage.getItem(inputBox.value)) < correctScore) {
+        if(parseInt(localStorage.getItem(inputBox.value)) < correctScoreValue) {
             console.log("Score is higher than current, updating")
             localStorage.setItem(inputBox.value, correctScoreValue);
             inputHiscore.classList.add('hidden');
