@@ -40,13 +40,13 @@ hiscoresBtn.addEventListener('click', showHiscores);
 let randomNum;
 let correctScoreValue = 0;
 let life = 3;
+let titleText = `<h1>Quiztion Time!</h1>`;
 
 function showStartMenu() {
     correctScoreValue = 0;
     life = 3;
     gameOver.classList.add('hidden');
     startMenu.classList.remove('hidden');
-    
 }
 
 /**
@@ -142,17 +142,41 @@ function showInstructions() {
     <h3>Click the answer to the question, and build your score up as high as you can. <br>The game ends when you lose your 3 lifes. Good luck!</h3>
     `;
 
-    let titleText = `<h1>Quiztion Time!</h1>`;
-
-    if(questionArea.innerHTML === titleText) {
-        questionArea.innerHTML = instructionsText;
-    } else {
+    if(questionArea.innerHTML === instructionsText) {
         questionArea.innerHTML = titleText;
+    } else {
+        questionArea.innerHTML = instructionsText;
     }
 }
 
 function showHiscores() {
 
+    let firstPlace = [];
+    let secondPlace = [];
+    let thirdPlace = [];
+    let fourthPlace = [];
+    let fifthPlace = [];
+
+    let hiscoreText = `
+    <h3>1st: ${firstPlace[0]} : ${firstPlace[1]}<br>
+        2nd: ${secondPlace[0]} : ${secondPlace[1]}<br>
+        3rd: <br>
+        4th: <br>
+        5th: </h3>
+    `
+    for(let i = 0; i < localStorage.length; i++) {
+        if(localStorage.getItem(localStorage.key[i]) > firstPlace[1]) {
+            firstPlace = [localStorage.getItem(localStorage.key[i]), localStorage.getItem(localStorage.key[i]).value];
+        } else if(localStorage.getItem(localStorage.key[i]) > secondPlace[1]) {
+            secondPlace = [localStorage.getItem[i], localStorage.getItem[i].value];
+        }
+    }
+
+    if(questionArea.innerHTML === hiscoreText) {
+        questionArea.innerHTML = titleText;
+    } else {
+        questionArea.innerHTML = hiscoreText;
+    }
 }
 
 /**
