@@ -22,6 +22,9 @@ const inputHiscore = document.getElementById('input-hiscore');
 const inputBox = document.getElementById('input');
 const resultsDiv = document.getElementById('results-div');
 const submitBtn = document.getElementById('submit-score');
+const instructionsBtn = document.getElementById('instructions');
+const hiscoresBtn = document.getElementById('hiscores');
+const questionArea = document.getElementById('question-area');
 
 startBtn.addEventListener('click', startQuiz);
 answerOne.addEventListener('click', checkAnswer);
@@ -31,6 +34,8 @@ answerFour.addEventListener('click', checkAnswer);
 playAgainBtn.addEventListener('click', showStartMenu);
 addHiscoreBtn.addEventListener('click', addHiscore)
 submitBtn.addEventListener('click', submitHiscore);
+instructionsBtn.addEventListener('click', showInstructions);
+hiscoresBtn.addEventListener('click', showHiscores);
 
 let randomNum;
 let correctScoreValue = 0;
@@ -130,10 +135,24 @@ function submitHiscore(){
         resultsDiv.classList.remove('hidden');
         showStartMenu();
     }
-    // localStorage.setItem(inputBox.value, correctScoreValue);
-    // inputHiscore.classList.add('hidden');
-    // resultsDiv.classList.remove('hidden');
-    // showStartMenu();
+}
+
+function showInstructions() {
+    let instructionsText = `
+    <h3>Click the answer to the question, and build your score up as high as you can. <br>The game ends when you lose your 3 lifes. Good luck!</h3>
+    `;
+
+    let titleText = `<h1>Quiztion Time!</h1>`;
+
+    if(questionArea.innerHTML === titleText) {
+        questionArea.innerHTML = instructionsText;
+    } else {
+        questionArea.innerHTML = titleText;
+    }
+}
+
+function showHiscores() {
+
 }
 
 /**
