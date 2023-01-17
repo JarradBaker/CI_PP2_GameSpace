@@ -137,6 +137,10 @@ function submitHiscore(){
     }
 }
 
+/**
+ * Toggles the start menu between showing the game instructions 
+ * and the title of the game.
+ */
 function showInstructions() {
     let instructionsText = `
     <h3>Click the answer to the question, and build your score up as high as you can. <br>The game ends when you lose your 3 lifes. Good luck!</h3>
@@ -149,6 +153,11 @@ function showInstructions() {
     }
 }
 
+/**
+ * Sorts through the stored key value pairs in localStorage, and 
+ * outputs the top 5 scores in order when the user presses the
+ * hiscores button.
+ */
 function showHiscores() {
 
     let firstPlace = ["", 0];
@@ -156,9 +165,6 @@ function showHiscores() {
     let thirdPlace = ["", 0];
     let fourthPlace = ["", 0];
     let fifthPlace = ["", 0];
-
-
-
 
     for(let i = 0; i < localStorage.length; i++) {
         console.log('in the for');
@@ -200,7 +206,6 @@ function showHiscores() {
         }
 
     }
-
 
     let hiscoreText = `
     <h3>1st: ${firstPlace[0]} : ${firstPlace[1]}<br>
