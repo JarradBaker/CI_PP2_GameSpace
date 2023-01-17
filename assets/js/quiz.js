@@ -151,26 +151,64 @@ function showInstructions() {
 
 function showHiscores() {
 
-    let firstPlace = [];
-    let secondPlace = [];
-    let thirdPlace = [];
-    let fourthPlace = [];
-    let fifthPlace = [];
+    let firstPlace = ["", 0];
+    let secondPlace = ["", 0];
+    let thirdPlace = ["", 0];
+    let fourthPlace = ["", 0];
+    let fifthPlace = ["", 0];
+
+
+
+
+    for(let i = 0; i < localStorage.length; i++) {
+        console.log('in the for');
+
+        if(parseInt(localStorage.getItem(localStorage.key(i))) > firstPlace[1]) {
+            if(firstPlace[1] !== null){
+                secondPlace = [firstPlace[0], firstPlace[1]];
+                firstPlace = [localStorage.key(i) , localStorage.getItem(localStorage.key(i))];
+            } else{
+                firstPlace = [localStorage.key(i) , localStorage.getItem(localStorage.key(i))];
+            }
+            
+        } else if(parseInt(localStorage.getItem(localStorage.key(i))) > secondPlace[1]) {
+            if(secondPlace[1] !== null){
+                thirdPlace = [secondPlace[0], secondPlace[1]];
+                secondPlace = [localStorage.key(i) , localStorage.getItem(localStorage.key(i))];
+            } else{
+                secondPlace = [localStorage.key(i) , localStorage.getItem(localStorage.key(i))];
+            }
+
+        } else if(parseInt(localStorage.getItem(localStorage.key(i))) > thirdPlace[1]) {
+            if(thirdPlace[1] !== null){
+                fourthPlace = [thirdPlace[0], thirdPlace[1]];
+                thirdPlace = [localStorage.key(i) , localStorage.getItem(localStorage.key(i))];
+            } else{
+                thirdPlace = [localStorage.key(i) , localStorage.getItem(localStorage.key(i))];
+            }
+
+        } else if(parseInt(localStorage.getItem(localStorage.key(i))) > fourthPlace[1]) {
+            if(fourthPlace[1] !== null){
+                fifthPlace = [fourthPlace[0], fourthPlace[1]];
+                fourthPlace = [localStorage.key(i) , localStorage.getItem(localStorage.key(i))];
+            } else{
+                fourthPlace = [localStorage.key(i) , localStorage.getItem(localStorage.key(i))];
+            }
+
+        } else if(parseInt(localStorage.getItem(localStorage.key(i))) > fifthPlace[1]) {
+            fifthPlace = [localStorage.key(i) , localStorage.getItem(localStorage.key(i))];
+        }
+
+    }
+
 
     let hiscoreText = `
     <h3>1st: ${firstPlace[0]} : ${firstPlace[1]}<br>
         2nd: ${secondPlace[0]} : ${secondPlace[1]}<br>
-        3rd: <br>
-        4th: <br>
-        5th: </h3>
+        3rd: ${thirdPlace[0]} : ${thirdPlace[1]}<br>
+        4th: ${fourthPlace[0]} : ${fourthPlace[1]}<br>
+        5th: ${fifthPlace[0]} : ${fifthPlace[1]}</h3>
     `
-    for(let i = 0; i < localStorage.length; i++) {
-        if(localStorage.getItem(localStorage.key[i]) > firstPlace[1]) {
-            firstPlace = [localStorage.getItem(localStorage.key[i]), localStorage.getItem(localStorage.key[i]).value];
-        } else if(localStorage.getItem(localStorage.key[i]) > secondPlace[1]) {
-            secondPlace = [localStorage.getItem[i], localStorage.getItem[i].value];
-        }
-    }
 
     if(questionArea.innerHTML === hiscoreText) {
         questionArea.innerHTML = titleText;
