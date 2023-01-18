@@ -158,7 +158,7 @@ header nav ul li a {
 
 
 /************************/
-/*   GAME OVER STATE    */
+/* QUIZ GAME OVER STATE */
 /************************/
 
 #game-over #results {
@@ -196,4 +196,13 @@ header nav ul li a {
     width: 40%;
     height: 50px;
     margin-top: 20px;
+}
+
+/************************/
+/*     CONTACT FORM     */
+/************************/
+main#contact-form {
+    width: 100vw;
+    height: 90vh;
+    background-color: #000000;
 }
