@@ -64,6 +64,7 @@ header nav .hamburger {
     height: 4px;
     margin: 5px auto;
     background-color: black;
+    border-radius: 10px;
 }
 
 .grid-wrapper .nav-links {
@@ -83,7 +84,7 @@ header nav .hamburger {
     text-decoration: none;
     color: #FF0000;
     font-weight: bold;
-    transition: 1s ease;
+    transition: 0.3s ease;
     display: block;
 }
 
@@ -100,6 +101,11 @@ header nav .hamburger {
 .hidden {
     display: none;
 }
+
+#hide {
+    display: none;
+}
+
 .btn {
     background-color: #FFFFFF;
     border-radius: 10px;
@@ -273,7 +279,7 @@ main#contact-form {
     }
 
     header nav .grid-wrapper .nav-links {
-        display: none;
+        display: block;
     }
 
     header nav .grid-wrapper .nav-links {
@@ -281,6 +287,7 @@ main#contact-form {
         justify-content: flex-end;
         width: 100%;
         position: absolute;
+        top: 10vh;
     }
 
     header nav .grid-wrapper .nav-links li {
@@ -296,7 +303,7 @@ main#contact-form {
         display: none;
     }
 
-    header nav .grid-wrapper {
+    header nav .grid-wrapper #hide {
         display: flex;
     }
 }
