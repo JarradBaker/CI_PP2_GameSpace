@@ -16,10 +16,10 @@ body {
 /*  HEADER AND NAV BAR   */
 /*************************/
 header {
-    height: 15vh;
+    height: 10vh;
     padding: auto 0;
     padding: 3vh 0;
-    max-width: 100vw;
+    
 }
 
 header nav {
@@ -29,7 +29,7 @@ header nav {
 
 header nav h2 {
     text-align: center;
-    align-self: center;
+    padding-left: 25px;
 }
 
 header nav h2 a {
@@ -63,15 +63,17 @@ header nav ul li a:hover {
     color: blue;
 }
 
-header nav .hamburger {
+header nav #hamburger {
     cursor: pointer;
     align-self: center;
+    justify-self: flex-end;
+    padding-right: 25px;
 }
 
 .bar {
     display: block;
-    width: 25px;
-    height: 3px;
+    width: 30px;
+    height: 4px;
     margin: 5px auto;
     background-color: black;
 }
