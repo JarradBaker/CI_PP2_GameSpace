@@ -23,12 +23,15 @@ header {
 }
 
 header nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    
+}
+
+header nav .grid-wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
 header nav h2 {
-    text-align: center;
     padding-left: 25px;
 }
 
@@ -42,32 +45,17 @@ header nav h2 a {
 
 header nav ul {
     list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
 }
 
-header nav ul li {
-    display: flex;
-    justify-self: center;
-    align-self: center;
-}
 
-header nav ul li a {
-    text-decoration: none;
-    color: #FF0000;
-    font-weight: bold;
-    transition: 1s ease;
-}
 
-header nav ul li a:hover {
-    color: blue;
-}
 
-header nav #hamburger {
+header nav .hamburger {
     cursor: pointer;
     align-self: center;
     justify-self: flex-end;
     padding-right: 25px;
+    display: none;
 }
 
 .bar {
@@ -77,6 +65,34 @@ header nav #hamburger {
     margin: 5px auto;
     background-color: black;
 }
+
+.grid-wrapper .nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.grid-wrapper .nav-links li {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    padding: 0 1.5rem;
+}
+
+.grid-wrapper .nav-links li a {
+    text-decoration: none;
+    color: #FF0000;
+    font-weight: bold;
+    transition: 1s ease;
+    display: block;
+}
+
+.grid-wrapper .nav-links li a:hover {
+    color: blue;
+}
+
+
+
 
  /*************************/
  /*    UTILITY CLASSES    */
@@ -90,7 +106,8 @@ header nav #hamburger {
     color: #FF0000;
     font-weight: bold;
     font-size: 1.1rem;
-    padding: 3px;
+    padding: 5px;
+    font-family: 'Orbitron', sans-serif;
 }
 .btn:hover {
     border: solid #FF0000 2px;
@@ -250,14 +267,36 @@ main#contact-form {
 
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 750px) {
-    header nav ul {
+@media screen and (max-width: 500px) {
+    header nav .hamburger {
+        display: block;
+    }
+
+    header nav .grid-wrapper .nav-links {
         display: none;
+    }
+
+    header nav .grid-wrapper .nav-links {
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 100%;
+        position: absolute;
+    }
+
+    header nav .grid-wrapper .nav-links li {
+        width: 100%;
+        background-color: #FFF000;
+        justify-content: center;
+        padding: 1rem;
     }
 }
 
-@media screen and (min-width: 751px) {
+@media screen and (min-width: 501px) {
     header nav .hamburger {
         display: none;
+    }
+
+    header nav .grid-wrapper {
+        display: flex;
     }
 }
