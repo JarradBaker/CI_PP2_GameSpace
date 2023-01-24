@@ -262,11 +262,37 @@ header nav .hamburger {
 /************************/
 /*     CONTACT FORM     */
 /************************/
-main#contact-form {
+#contact-form {
     width: 100vw;
     height: 90vh;
     background-color: #000000;
+    color: #FF0000;
+    text-align: center;
 }
+
+#contact-form p {
+    padding: 40px 25px;
+    font-style: italic;
+}
+
+.divider {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-input {
+    max-width: 50%;
+    margin: 5px auto;
+    text-align: center;
+    color: #FF0000;
+}
+
+
 
 
 

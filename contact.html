@@ -12,22 +12,40 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="index.html" class="nav">Quiz</a></li>
-                <li><a href="game.html" class="nav">Game</a></li>
-                <li><a href="contact.html" class="nav">Contact</a></li>
-            </ul>
+            <div class="grid-wrapper">
+                <h2><a href="index.html">GameSpace</a></h2>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul id="hide" class="nav-links">
+                    <li><a href="index.html" class="nav">Quiz</a></li>
+                    <li><a href="game.html" class="nav">Game</a></li>
+                    <li><a href="contact.html" class="nav">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     
-    <main id="contact-form">
-        <form id="">
-            <div>
-                <label for=""></label>
-                <input type="text">
+    <main>
+        <form id="contact-form">
+            <p>Please don't hesitate to contact us if there are any issues with the games, or to provide feedback, or suggest improvements!</p>
+            <div class="divider">
+                <label for="full-name" class="form-label">Full Name:</label>
+                <input type="text" class="form-input" id="full-name" name="full-name" required>
+            </div>
+            <div class="divider">
+                <label for="email" class="form-label">Email:</label>
+                <input type="text" class="form-input" id="email" name="email" required>
+            </div>
+            <div class="divider">
+                <label for="message" class="form-label">Message:</label>
+                <textarea name="message" id="message" class="form-input" cols="30" rows="10"></textarea>
             </div>
         </form>
     </main>
 
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
