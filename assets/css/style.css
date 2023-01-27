@@ -295,6 +295,37 @@ header nav .hamburger {
 
 
 
+/* Naughts and Crosses - Game Page */
+#main-game-area {
+    height: 90vh;
+    width: 100vw;
+    background-color: #000000;
+}
+
+#game-grid {
+    height: 75vh;
+    width: 100vw;
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(30vh);
+}
+
+#game-grid .game-grid-square {
+    border: solid white 1px;
+}
+
+#main-game-area #game-score-area {
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFF000;
+    padding: 0 20px;
+}
+
+
+
 
 
 
