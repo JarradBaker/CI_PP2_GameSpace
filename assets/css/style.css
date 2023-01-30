@@ -307,13 +307,51 @@ header nav .hamburger {
     width: 100vw;
     background-color: #000000;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: minmax(30vh);
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
 }
 
 #game-grid .game-grid-square {
     border: solid white 1px;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
+
+
+
+.game-grid-square.x::before,
+.game-grid-square.x::after {
+    content: '';
+    width: 10%;
+    height: 90%;
+    background-color: #FFF000;
+    position: absolute;
+}
+
+.game-grid-square.x::before {
+    transform: rotate(45deg);
+}
+.game-grid-square.x::after {
+    transform: rotate(-45deg);
+}
+
+
+.game-grid-square.o::before,
+.game-grid-square.o::after {
+    content: '';
+    width: 90%;
+    height: 90%;
+    background-color: #FFF000;
+}
+
+
 
 #main-game-area #game-score-area {
     height: 15vh;
