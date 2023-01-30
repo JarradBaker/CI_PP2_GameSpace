@@ -344,6 +344,8 @@ on youtube for the x and o classes
     transform: rotate(-45deg);
 }
 
+/* https://www.youtube.com/watch?v=Y-GkMjUZsmM   -   17:10 */
+
 .game-grid-square.o::before,
 .game-grid-square.o::after {
     content: '';
@@ -359,6 +361,12 @@ on youtube for the x and o classes
     width: 70%;
     height: 70%;
     background-color: #000000;
+}
+
+
+.game-grid-square.x,
+.game-grid-square.o {
+    cursor: not-allowed;
 }
 
 
