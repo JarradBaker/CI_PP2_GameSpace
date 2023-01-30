@@ -325,7 +325,10 @@ header nav .hamburger {
 }
 
 
-
+/* 
+Referred to code from Web Dev Simplified 
+on youtube for the x and o classes 
+*/
 .game-grid-square.x::before,
 .game-grid-square.x::after {
     content: '';
@@ -334,7 +337,6 @@ header nav .hamburger {
     background-color: #FFF000;
     position: absolute;
 }
-
 .game-grid-square.x::before {
     transform: rotate(45deg);
 }
@@ -342,14 +344,23 @@ header nav .hamburger {
     transform: rotate(-45deg);
 }
 
-
 .game-grid-square.o::before,
 .game-grid-square.o::after {
     content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+.game-grid-square.o::before {
     width: 90%;
     height: 90%;
     background-color: #FFF000;
 }
+.game-grid-square.o::after {
+    width: 70%;
+    height: 70%;
+    background-color: #000000;
+}
+
 
 
 
