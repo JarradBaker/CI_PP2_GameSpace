@@ -331,8 +331,8 @@ on youtube for the x and o classes
 */
 .game-grid-square.x::before,
 .game-grid-square.x::after,
-.game-grid .game-grid-square:hover::before,
-.game-grid .game-grid-square:hover::after { 
+.game-grid .game-grid-square:not(.x):not(.o):hover::before,
+.game-grid .game-grid-square:not(.x):not(.o):hover::after { 
     content: '';
     width: 10%;
     height: 90%;
@@ -340,20 +340,23 @@ on youtube for the x and o classes
     position: absolute;
 }
 .game-grid-square.x::before,
-.game-grid .game-grid-square:hover::before {
+.game-grid .game-grid-square:not(.x):not(.o):hover::before {
     transform: rotate(45deg);
 }
 .game-grid-square.x::after,
-.game-grid .game-grid-square:hover::after { 
+.game-grid .game-grid-square:not(.x):not(.o):hover::after { 
     transform: rotate(-45deg);
 }
 
 
+.game-grid .game-grid-square:not(.x):not(.o):hover::before,
+.game-grid .game-grid-square:not(.x):not(.o):hover::after {
+    background-color: #fff999;
+}
 
-/* #game-grid.x .game-grid-square:hover */
 
 
-/* https://www.youtube.com/watch?v=Y-GkMjUZsmM   -   17:10 */
+/* https://www.youtube.com/watch?v=Y-GkMjUZsmM   -   20:10 */
 
 .game-grid-square.o::before,
 .game-grid-square.o::after {
