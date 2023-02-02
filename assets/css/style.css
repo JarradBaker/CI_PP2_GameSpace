@@ -302,7 +302,7 @@ header nav .hamburger {
     background-color: #000000;
 }
 
-#game-grid {
+.game-grid {
     height: 75vh;
     width: 100vw;
     background-color: #000000;
@@ -314,7 +314,7 @@ header nav .hamburger {
     align-items: center;
 }
 
-#game-grid .game-grid-square {
+.game-grid .game-grid-square {
     border: solid white 1px;
     height: 100px;
     width: 100px;
@@ -331,8 +331,8 @@ on youtube for the x and o classes
 */
 .game-grid-square.x::before,
 .game-grid-square.x::after,
-.game-grid-square.x .game-grid-square:hover::before,
-.game-grid-square.x .game-grid-square:hover::after { 
+.game-grid .game-grid-square:hover::before,
+.game-grid .game-grid-square:hover::after { 
     content: '';
     width: 10%;
     height: 90%;
@@ -340,17 +340,17 @@ on youtube for the x and o classes
     position: absolute;
 }
 .game-grid-square.x::before,
-.game-grid-square.x .game-grid-square:hover::before {
+.game-grid .game-grid-square:hover::before {
     transform: rotate(45deg);
 }
 .game-grid-square.x::after,
-.game-grid-square.x .game-grid-square:hover::after { 
+.game-grid .game-grid-square:hover::after { 
     transform: rotate(-45deg);
 }
 
 
 
-#game-grid.x .game-grid-square:hover
+/* #game-grid.x .game-grid-square:hover */
 
 
 /* https://www.youtube.com/watch?v=Y-GkMjUZsmM   -   17:10 */
