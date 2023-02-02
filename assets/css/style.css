@@ -330,21 +330,21 @@ Referred to code from Web Dev Simplified
 on youtube for the x and o classes 
 */
 .game-grid-square.x::before,
-.game-grid-square.x::after
-#game-grid.x .game-grid-square:hover::before,
-#game-grid.x .game-grid-square:hover::after { 
+.game-grid-square.x::after,
+.game-grid-square.x .game-grid-square:hover::before,
+.game-grid-square.x .game-grid-square:hover::after { 
     content: '';
     width: 10%;
     height: 90%;
     background-color: #FFF000;
     position: absolute;
 }
-.game-grid-square.x::before
-#game-grid.x .game-grid-square:hover::before {
+.game-grid-square.x::before,
+.game-grid-square.x .game-grid-square:hover::before {
     transform: rotate(45deg);
 }
-.game-grid-square.x::after
-#game-grid.x .game-grid-square:hover::after { 
+.game-grid-square.x::after,
+.game-grid-square.x .game-grid-square:hover::after { 
     transform: rotate(-45deg);
 }
 
