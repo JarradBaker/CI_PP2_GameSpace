@@ -6,9 +6,18 @@ const gameGrid = document.getElementsByClassName('game-grid')[0];
 
 let oTurn;
 
-gameSquares.forEach(square => {
-    square.addEventListener('click', checkSquare, { once: true })
-})
+startGame();
+
+
+function startGame() {
+    oTurn = false;
+    
+    gameSquares.forEach(square => {
+        square.addEventListener('click', checkSquare, { once: true })
+    })
+    setHoverClass();
+}
+
 
 function checkSquare(e) {
     const square = e.target;
@@ -30,5 +39,12 @@ function changePlayer() {
 }
 
 function setHoverClass(){
+    gameGrid.classList.remove(O_CLASS);
+    gameGrid.classList.remove(X_CLASS);
 
+    if(oTurn) {
+        gameGrid.classList.add(O_CLASS);
+    } else {
+        gameGrid.classList.add(X_CLASS);
+    }
 }
