@@ -105,7 +105,7 @@ footer {
 footer .quote {
     display: flex;
     flex-flow: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
 }
@@ -147,7 +147,8 @@ footer .social a {
     border: solid #FF0000 2px;
 }
 .big-txt {
-    color: #FFF000;
+    color: #2C7806;
+    font-weight: bold;
     font-size: 2rem;
 }
 
@@ -158,7 +159,7 @@ footer .social a {
 /*************************/
 #start-menu {
     width: 100vw;
-    background-color: #000000;
+    background-color: #f5eec2;
 }
 
 #start-menu #menu-buttons {
@@ -179,12 +180,13 @@ footer .social a {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFF000;
+    color: #2C7806;
+    font-weight: bold;
     padding: 0 2%;
 }
 
 #start-menu #start-button-area {
-    border: solid black 2px;
+    border: solid #f5eec2 2px;
     display: flex;
     justify-content: center;
     height: 15vh;
@@ -204,7 +206,7 @@ footer .social a {
 /************************/
 #main-quiz {
     width: 100vw;
-    background-color: #000000;
+    background-color: #f5eec2;
 }
 
 #main-quiz #scores {
@@ -212,7 +214,7 @@ footer .social a {
     justify-content: space-between;
     align-items: center;
     height: 10vh;
-    color: #FFF000;
+    color: #2C7806;
     padding: 0 6%;
     font-weight: bold;
     font-size: 1.25rem;
@@ -224,7 +226,8 @@ footer .social a {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFF000;
+    font-weight: bold;
+    color: #2C7806;
     padding: 0 5%;
 }
 
@@ -251,7 +254,7 @@ footer .social a {
 
 #game-over #results {
     height: 75vh;
-    background-color: #000000;
+    background-color: #f5eec2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,7 +262,7 @@ footer .social a {
 
 #game-over #option-buttons {
     height: 15vh;
-    background-color: #000000;
+    background-color: #f5eec2;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -292,7 +295,7 @@ footer .social a {
 #contact-form {
     width: 100vw;
     height: 90vh;
-    background-color: #000000;
+    background-color: #f5eec2;
     color: #FF0000;
     text-align: center;
 }
@@ -326,13 +329,13 @@ footer .social a {
 #main-game-area {
     height: 90vh;
     width: 100vw;
-    background-color: #000000;
+    background-color: #f5eec2;
 }
 
 .game-grid {
     height: 75vh;
     width: 100vw;
-    background-color: #000000;
+    background-color: #f5eec2;
     display: grid;
     grid-template-columns: repeat(3, auto);
     justify-content: center;
@@ -359,12 +362,12 @@ on youtube for the x and o classes
 
 .game-grid-square.x::before,
 .game-grid-square.x::after {
-    background-color: #FFF000;
+    background-color: #2C7806;
 }
 
 .game-grid-square.o::before,
 .game-grid-square.o::after {
-    background-color: #FFF000;
+    background-color: #2C7806;
 }
 
 
@@ -389,7 +392,7 @@ on youtube for the x and o classes
 
 .game-grid .game-grid-square:not(.x):not(.o):hover::before,
 .game-grid .game-grid-square:not(.x):not(.o):hover::after {
-    background-color: #fff999;
+    background-color: #f5eec2;
 }
 
 
@@ -413,7 +416,7 @@ on youtube for the x and o classes
 .game-grid .game-grid-square:not(.x):not(.o):hover::after {
     width: 70%;
     height: 70%;
-    background-color: #000000;
+    background-color: #f5eec2;
 }
 
 
@@ -430,7 +433,8 @@ on youtube for the x and o classes
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #FFF000;
+    color: #2C7806;
+    font-weight: bold;
     padding: 0 20px;
 }
 
@@ -460,7 +464,7 @@ on youtube for the x and o classes
 
     header nav .grid-wrapper .nav-links li {
         width: 100%;
-        background-color: #FFF000;
+        background-color: #2C7806;
         justify-content: center;
         padding: 1rem;
     }
