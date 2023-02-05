@@ -3,13 +3,12 @@
 
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 0;
     margin: 0;
 }
 
 body {
-
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /*************************/
@@ -94,12 +93,12 @@ header nav .hamburger {
 
 
 footer {
-    height: 20vh;
+    /* height: 20vh; */
     color: black;
     background-color: #FFFFFF;
-    font-size: 0.75rem;
     display: grid;
     grid-template-columns: 1fr;
+    font-family: none;
 }
 
 footer .quote {
@@ -108,17 +107,20 @@ footer .quote {
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 15px;
+    font-weight: bold;
 }
 
-footer .social {
-    height: 7.5vh;
-    font-size: 1rem;
-    
+footer #social {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 150%;
+    padding: 15px 0;
 }
-footer .social a {
-    text-decoration: none;
-    font-style: normal;
-    font-size: 2rem;
+footer #social a {
+    color: #FF0000;
 }
 
 
@@ -345,7 +347,7 @@ footer .social a {
 }
 
 .game-grid .game-grid-square {
-    border: solid white 1px;
+    border: solid red 1px;
     height: 100px;
     width: 100px;
     display: flex;
@@ -392,7 +394,7 @@ on youtube for the x and o classes
 
 .game-grid .game-grid-square:not(.x):not(.o):hover::before,
 .game-grid .game-grid-square:not(.x):not(.o):hover::after {
-    background-color: #f5eec2;
+    background-color: grey;
 }
 
 
