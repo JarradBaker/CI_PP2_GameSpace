@@ -9,3 +9,17 @@ hamburger.addEventListener('click', () => {
     }
     
 } );
+
+
+
+const quoteText = document.getElementsByClassName('quote-text')[0];
+const quoteAuthor = document.getElementsByClassName('quote-author')[0];
+
+fetch('https://api.quotable.io/random')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data.content);
+        quoteText.innerText = data.content;
+        console.log(data.author);
+        quoteAuthor.innerText = data.author;
+    })

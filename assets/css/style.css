@@ -93,6 +93,33 @@ header nav .hamburger {
 }
 
 
+footer {
+    height: 20vh;
+    color: black;
+    background-color: #FFFFFF;
+    font-size: 0.75rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+footer .quote {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+footer .social {
+    height: 7.5vh;
+    font-size: 1rem;
+    
+}
+footer .social a {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 2rem;
+}
 
 
  /*************************/
@@ -329,6 +356,18 @@ header nav .hamburger {
 Referred to code from Web Dev Simplified 
 on youtube for the x and o classes 
 */
+
+.game-grid-square.x::before,
+.game-grid-square.x::after {
+    background-color: #FFF000;
+}
+
+.game-grid-square.o::before,
+.game-grid-square.o::after {
+    background-color: #FFF000;
+}
+
+
 .game-grid-square.x::before,
 .game-grid-square.x::after,
 .game-grid .game-grid-square:not(.x):not(.o):hover::before,
@@ -336,7 +375,6 @@ on youtube for the x and o classes
     content: '';
     width: 10%;
     height: 90%;
-    background-color: #FFF000;
     position: absolute;
 }
 .game-grid-square.x::before,
@@ -359,17 +397,20 @@ on youtube for the x and o classes
 /* https://www.youtube.com/watch?v=Y-GkMjUZsmM   -   20:10 */
 
 .game-grid-square.o::before,
-.game-grid-square.o::after {
+.game-grid-square.o::after,
+.game-grid .game-grid-square:not(.x):not(.o):hover::before,
+.game-grid .game-grid-square:not(.x):not(.o):hover::after {
     content: '';
     position: absolute;
     border-radius: 50%;
 }
-.game-grid-square.o::before {
+.game-grid-square.o::before,
+.game-grid .game-grid-square:not(.x):not(.o):hover::before {
     width: 90%;
     height: 90%;
-    background-color: #FFF000;
 }
-.game-grid-square.o::after {
+.game-grid-square.o::after,
+.game-grid .game-grid-square:not(.x):not(.o):hover::after {
     width: 70%;
     height: 70%;
     background-color: #000000;
