@@ -70,6 +70,7 @@ header nav .hamburger {
     display: flex;
     list-style: none;
     justify-content: space-between;
+    z-index: 5;
 }
 
 .grid-wrapper .nav-links li {
@@ -87,7 +88,8 @@ header nav .hamburger {
     display: block;
 }
 
-.grid-wrapper .nav-links li a:hover {
+.grid-wrapper .nav-links li a:hover,
+.grid-wrapper .nav-links li a.current {
     color: blue;
 }
 
@@ -399,7 +401,6 @@ on youtube for the x and o classes
 
 
 
-/* https://www.youtube.com/watch?v=Y-GkMjUZsmM   -   20:10 */
 
 .game-grid-square.o::before,
 .game-grid-square.o::after,
@@ -468,6 +469,7 @@ on youtube for the x and o classes
     header nav .grid-wrapper .nav-links li {
         width: 100%;
         background-color: #2C7806;
+        border: solid 5px #2C7806;
         justify-content: center;
         padding: 1rem;
     }

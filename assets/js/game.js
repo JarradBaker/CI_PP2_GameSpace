@@ -119,15 +119,12 @@ function changePlayer() {
 function setHoverClass(){
     gameGrid.classList.remove(O_CLASS);
     gameGrid.classList.remove(X_CLASS);
-
     
     if(oTurn) {
         gameGrid.classList.add(O_CLASS);
     } else {
         gameGrid.classList.add(X_CLASS);
     }
-    
-    
 }
 
 /**
