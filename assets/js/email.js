@@ -10,17 +10,22 @@ submitButton.addEventListener('click', sendEmail);
  * and emails the responses through emailjs
  */
 function sendEmail() {
+    // Taking the input and setting as parameters
     var parameters = {
         fullName: document.getElementById('full-name').value,
         email: document.getElementById('email').value,
         message: document.getElementById('message').value
     }; 
 
+    // Declaring and assigning the service_ID and template_ID
+    // from my emailjs to use as parameters 
     const serviceID = 'service_2oq1xpu';
     const templateID = 'template_qetzcgr';
 
+    // emailjs API Key
     emailjs.init("dsW5HOrQvkL62kH5a");
 
+    // Using all the parameters to send the email through emailjs
     emailjs.send(serviceID, templateID, parameters)
     .then(
         res => {
@@ -29,9 +34,10 @@ function sendEmail() {
             document.getElementById('message').value = '';
 
             console.log(res);
-            alert("Your message has been sent successfully!")
         }
     )
     .catch((err) => console.log(err));
+
+    alert('Contact form submitted!')
 }
 

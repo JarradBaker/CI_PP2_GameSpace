@@ -26,6 +26,7 @@ const instructionsBtn = document.getElementById('instructions');
 const hiscoresBtn = document.getElementById('hiscores');
 const questionArea = document.getElementById('question-area');
 
+// Adding event listeners for the different interactables
 startBtn.addEventListener('click', startQuiz);
 answerOne.addEventListener('click', checkAnswer);
 answerTwo.addEventListener('click', checkAnswer);
@@ -37,11 +38,15 @@ submitBtn.addEventListener('click', submitHiscore);
 instructionsBtn.addEventListener('click', showInstructions);
 hiscoresBtn.addEventListener('click', showHiscores);
 
+// Declaring the global variables
 let randomNum;
 let correctScoreValue = 0;
 let life = 3;
 let titleText = `<h1>Quiztion Time!</h1>`;
 
+/**
+ * Shows the start menu of the quiz
+ */
 function showStartMenu() {
     correctScoreValue = 0;
     life = 3;
@@ -77,6 +82,10 @@ function nextQuestion() {
     console.log(randomNum);
 }
 
+/**
+ * Checks whether the answer selected answer is correct
+ * and adds 1 score if it is, or takes 1 life if it isn't
+ */
 function checkAnswer() {
     let correctAnswer = questions[randomNum].correct;
     if(this.innerText === correctAnswer) {
@@ -88,11 +97,17 @@ function checkAnswer() {
     }
 }
 
+/**
+ * The function that increments the player's score
+ */
 function incrementCorrectScore() {
     ++correctScoreValue;
     correctScore.innerText = correctScoreValue; 
 }
 
+/**
+ * The function that decremenets the player's lives
+ */
 function decrementLifeScore() {
     --life;
     if(life <= 0) {
@@ -102,16 +117,27 @@ function decrementLifeScore() {
     }
 }
 
+/**
+ * Shows the game over menu, and displays the score
+ */
 function endGame() {
     mainQuiz.classList.add('hidden');
     gameOver.classList.remove('hidden');
     scoreOutput.innerText = correctScoreValue;
 }
 
+/**
+ * Shows the add hiscore menu
+ */
 function addHiscore() {
     resultsDiv.classList.add('hidden');
     inputHiscore.classList.remove('hidden'); 
 }
+
+/**
+ * Allows the player to enter their hiscore and save it to
+ * local storage
+ */
 function submitHiscore(){
     if(localStorage.getItem(inputBox.value)) {
         console.log("Hiscore Exists for this name")
