@@ -175,6 +175,8 @@ footer #social a:hover {
     justify-content: space-between;
     align-items: center;
     height: 10vh;
+    max-width: 1000px;
+    margin: 0 auto;
     padding: 0 10px;
 }
 
@@ -184,6 +186,8 @@ footer #social a:hover {
 
 #start-menu #question-area {
     height: 65vh;
+    max-width: 1000px;
+    margin: 0 auto;
     text-align: center;
     display: flex;
     align-items: center;
@@ -198,6 +202,8 @@ footer #social a:hover {
     display: flex;
     justify-content: center;
     height: 15vh;
+    max-width: 1000px;
+    margin: 0 auto;
     align-items: center;
 }
 
@@ -222,6 +228,8 @@ footer #social a:hover {
     justify-content: space-between;
     align-items: center;
     height: 10vh;
+    max-width: 1000px;
+    margin: 0 auto;
     color: #0000FF;
     padding: 0 6%;
     font-weight: bold;
@@ -230,6 +238,8 @@ footer #social a:hover {
 
 #main-quiz #question {
     height: 65vh;
+    max-width: 1000px;
+    margin: 0 auto;
     text-align: center;
     display: flex;
     align-items: center;
@@ -239,12 +249,17 @@ footer #social a:hover {
     padding: 0 5%;
 }
 
-
+#main-quiz .container {
+    margin: 0 auto;
+    max-width: 1000px;
+}
 #main-quiz #answer-buttons {
     /* border: solid black 2px; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 15vh;
+    max-width: 1000px;
+    margin: 0 auto;
     align-items: center;
     padding: 0;
     margin: 0;
@@ -259,10 +274,14 @@ footer #social a:hover {
 /************************/
 /* QUIZ GAME OVER STATE */
 /************************/
-
+#game-over {
+    width: 100%;
+    background-color: #f5eec2;
+}
 #game-over #results {
     height: 75vh;
-    background-color: #f5eec2;
+    max-width: 1000px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -270,6 +289,8 @@ footer #social a:hover {
 
 #game-over #option-buttons {
     height: 15vh;
+    max-width: 1000px;
+    margin: 0 auto;
     background-color: #f5eec2;
     display: flex;
     justify-content: space-evenly;
@@ -344,6 +365,7 @@ footer #social a:hover {
 .game-grid {
     height: 75vh;
     width: 100%;
+    max-width: 1000px;
     background-color: #f5eec2;
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -438,6 +460,7 @@ on youtube for the x and o classes
 
 #main-game-area #game-score-area {
     height: 15vh;
+    max-width: 1000px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -505,9 +528,17 @@ on youtube for the x and o classes
     }
     .game-grid {
         height: 60vh;
+        margin: 0 auto;
     }
     #contact-form {
         height: 75vh;
+    }
+    .game-grid .game-grid-square {
+        width: 150px;
+        height: 150px;
+    }
+    #main-game-area #game-score-area {
+        margin: 0 auto;
     }
     footer {
         height: 15vh;
