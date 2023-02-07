@@ -77,14 +77,14 @@ function nextQuestion() {
     randomNum = Math.floor(Math.random() * 10);
     question.innerText = questions[randomNum].question;
 
-    for(let i = 0; i < 4; i++) {
-        answerBtns[i].innerText = questions[randomNum].answers[i].text;
-    }
+    // for(let i = 0; i < 4; i++) {
+    //     answerBtns[i].innerText = questions[randomNum].answers[i].text;
+    // }
 
-    // answerOne.innerText = questions[randomNum].answers[0].text;
-    // answerTwo.innerText = questions[randomNum].answers[1].text;
-    // answerThree.innerText = questions[randomNum].answers[2].text;
-    // answerFour.innerText = questions[randomNum].answers[3].text;
+    answerBtns.forEach((button, index) => {
+        answerBtns.innerText = questions[randomNum].answers[index].text;
+    }) 
+
     console.log(randomNum);
 }
 

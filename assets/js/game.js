@@ -23,12 +23,9 @@ const gameGrid = document.getElementsByClassName('game-grid')[0];
 const restartButton = document.getElementById('reset-game');
 const winningText = document.getElementById('winning-text');
 
-// A variable to determine who's turn it is
 let oTurn;
-// A variable to see if a player has won
 let hasPlayerWon = false;
 
-// Eventlistener to restart the game with the restart button
 restartButton.addEventListener('click', startGame);
 
 // Starting the game
@@ -63,7 +60,6 @@ function checkSquare(e) {
     if(!hasPlayerWon) {
         placeSymbol(square, currentClass);
     }
-    // placeSymbol(square, currentClass);
 
     if(checkWin(currentClass)){
         endGame(false);

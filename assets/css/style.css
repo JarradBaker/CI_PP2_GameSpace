@@ -1,15 +1,18 @@
+/* Importing google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap');
 
-
+/* border-box hack */
 *, *::before, *::after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* setting a font in the body so it doesn't overwrite font awesome */
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 
 /*************************/
 /*  HEADER AND NAV BAR   */
@@ -45,9 +48,6 @@ header nav h2 a {
 header nav ul {
     list-style: none;
 }
-
-
-
 
 header nav .hamburger {
     cursor: pointer;
@@ -93,9 +93,7 @@ header nav .hamburger {
     color: #0000FF;
 }
 
-
 footer {
-    /* height: 20vh; */
     color: black;
     background-color: #FFFFFF;
     display: grid;
@@ -122,25 +120,31 @@ footer #social {
     font-size: 150%;
     padding: 15px 0;
 }
+
 footer #social a {
     color: #FF0000;
     transition: 0.3s ease;
 }
+
 footer #social a:hover {
     color: #0000FF;
 }
 
+
  /*************************/
  /*    UTILITY CLASSES    */
  /*************************/
+ /* class to hide elements */
 .hidden {
     display: none;
 }
 
+/* id to hide elements with more specificity */
 #hide {
     display: none;
 }
 
+/* Generic styling for buttons */
 .btn {
     background-color: #FFFFFF;
     border-radius: 10px;
@@ -151,15 +155,16 @@ footer #social a:hover {
     font-family: 'Orbitron', sans-serif;
     height: 50px;
 }
+
 .btn:hover {
     border: solid #FF0000 2px;
 }
+
 .big-txt {
     color: #0000FF;
     font-weight: bold;
     font-size: 2rem;
 }
-
 
 
 /*************************/
@@ -213,8 +218,6 @@ footer #social a:hover {
 }
 
 
-
-
 /************************/
 /* QUIZ MAIN GAME STATE */
 /************************/
@@ -253,6 +256,7 @@ footer #social a:hover {
     margin: 0 auto;
     max-width: 1000px;
 }
+
 #main-quiz #answer-buttons {
     /* border: solid black 2px; */
     display: grid;
@@ -264,11 +268,11 @@ footer #social a:hover {
     padding: 0;
     margin: 0;
 }
+
 #main-quiz #answer-buttons .btn {
     height: 7.5vh;
     border-radius: 0;
 }
-
 
 
 /************************/
@@ -278,6 +282,7 @@ footer #social a:hover {
     width: 100%;
     background-color: #f5eec2;
 }
+
 #game-over #results {
     height: 75vh;
     max-width: 1000px;
@@ -318,6 +323,7 @@ footer #social a:hover {
     margin-top: 20px;
 }
 
+
 /************************/
 /*     CONTACT FORM     */
 /************************/
@@ -351,8 +357,6 @@ footer #social a:hover {
     text-align: center;
     color: #FF0000;
 }
-
-
 
 
 /* Naughts and Crosses - Game Page */
@@ -390,7 +394,6 @@ footer #social a:hover {
 Referred to code from Web Dev Simplified 
 on youtube for the x and o classes 
 */
-
 .game-grid-square.x::before,
 .game-grid-square.x::after {
     background-color: #0000FF;
@@ -401,7 +404,6 @@ on youtube for the x and o classes
     background-color: #0000FF;
 }
 
-
 .game-grid-square.x::before,
 .game-grid-square.x::after,
 .game-grid.x .game-grid-square:not(.x):not(.o):hover::before,
@@ -411,23 +413,21 @@ on youtube for the x and o classes
     height: 90%;
     position: absolute;
 }
+
 .game-grid-square.x::before,
 .game-grid.x .game-grid-square:not(.x):not(.o):hover::before {
     transform: rotate(45deg);
 }
+
 .game-grid-square.x::after,
 .game-grid.x .game-grid-square:not(.x):not(.o):hover::after { 
     transform: rotate(-45deg);
 }
 
-
 .game-grid .game-grid-square:not(.x):not(.o):hover::before,
 .game-grid .game-grid-square:not(.x):not(.o):hover::after {
     background-color: grey;
 }
-
-
-
 
 .game-grid-square.o::before,
 .game-grid-square.o::after,
@@ -437,11 +437,13 @@ on youtube for the x and o classes
     position: absolute;
     border-radius: 50%;
 }
+
 .game-grid-square.o::before,
 .game-grid.o .game-grid-square:not(.x):not(.o):hover::before {
     width: 90%;
     height: 90%;
 }
+
 .game-grid-square.o::after,
 .game-grid.o .game-grid-square:not(.x):not(.o):hover::after {
     width: 70%;
@@ -449,14 +451,10 @@ on youtube for the x and o classes
     background-color: #f5eec2;
 }
 
-
 .game-grid-square.x,
 .game-grid-square.o {
     cursor: not-allowed;
 }
-
-
-
 
 #main-game-area #game-score-area {
     height: 15vh;
@@ -477,6 +475,7 @@ on youtube for the x and o classes
 
 
 /* MEDIA QUERIES */
+/* mobile */
 @media screen and (max-width: 500px) {
     header nav .hamburger {
         display: block;
@@ -503,6 +502,7 @@ on youtube for the x and o classes
     }
 }
 
+/* bigger than mobile for hamburger menu */
 @media screen and (min-width: 501px) {
     header nav .hamburger {
         display: none;
@@ -513,6 +513,7 @@ on youtube for the x and o classes
     }
 }
 
+/* bigger than mobile width and height */
 @media screen and (min-width: 501px) and (min-height: 701px){
     #start-menu #question-area {
         height: 50vh;
