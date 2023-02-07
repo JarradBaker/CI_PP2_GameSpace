@@ -90,7 +90,7 @@ header nav .hamburger {
 
 .grid-wrapper .nav-links li a:hover,
 .grid-wrapper .nav-links li a.current {
-    color: blue;
+    color: #0000FF;
 }
 
 
@@ -112,6 +112,7 @@ footer .quote {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-top: 15px;
     font-weight: bold;
+    font-size: 0.75rem;
 }
 
 footer #social {
@@ -123,8 +124,11 @@ footer #social {
 }
 footer #social a {
     color: #FF0000;
+    transition: 0.3s ease;
 }
-
+footer #social a:hover {
+    color: #0000FF;
+}
 
  /*************************/
  /*    UTILITY CLASSES    */
@@ -151,7 +155,7 @@ footer #social a {
     border: solid #FF0000 2px;
 }
 .big-txt {
-    color: #2C7806;
+    color: #0000FF;
     font-weight: bold;
     font-size: 2rem;
 }
@@ -184,7 +188,7 @@ footer #social a {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #2C7806;
+    color: #0000FF;
     font-weight: bold;
     padding: 0 2%;
 }
@@ -218,7 +222,7 @@ footer #social a {
     justify-content: space-between;
     align-items: center;
     height: 10vh;
-    color: #2C7806;
+    color: #0000FF;
     padding: 0 6%;
     font-weight: bold;
     font-size: 1.25rem;
@@ -231,7 +235,7 @@ footer #social a {
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    color: #2C7806;
+    color: #0000FF;
     padding: 0 5%;
 }
 
@@ -307,6 +311,7 @@ footer #social a {
 #contact-form p {
     padding: 40px 25px;
     font-style: italic;
+    font-weight: bold;
 }
 
 .divider {
@@ -366,12 +371,12 @@ on youtube for the x and o classes
 
 .game-grid-square.x::before,
 .game-grid-square.x::after {
-    background-color: #2C7806;
+    background-color: #0000FF;
 }
 
 .game-grid-square.o::before,
 .game-grid-square.o::after {
-    background-color: #2C7806;
+    background-color: #0000FF;
 }
 
 
@@ -436,7 +441,7 @@ on youtube for the x and o classes
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #2C7806;
+    color: #0000FF;
     font-weight: bold;
     padding: 0 20px;
     font-size: 1.25rem;
@@ -482,5 +487,29 @@ on youtube for the x and o classes
 
     header nav .grid-wrapper #hide {
         display: flex;
+    }
+}
+
+@media screen and (min-width: 501px) and (min-height: 701px){
+    #start-menu #question-area {
+        height: 50vh;
+    }
+    #main-quiz #question {
+        height: 50vh;
+    }
+    #game-over #results {
+        height: 60vh;
+    }
+    #main-game-area {
+        height: 75vh;
+    }
+    .game-grid {
+        height: 60vh;
+    }
+    #contact-form {
+        height: 75vh;
+    }
+    footer {
+        height: 15vh;
     }
 }
