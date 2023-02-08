@@ -6,7 +6,7 @@ const gameOver = document.getElementById('game-over');
 
 // Declaring and assigning the different elements of the game
 // that will be interacted with.
-const answerBtns = document.getElementsByClassName('answer-btn');
+const answerBtns = document.querySelectorAll('.answer-btn');
 const answerOne = document.getElementById('answer-one');
 const answerTwo = document.getElementById('answer-two');
 const answerThree = document.getElementById('answer-three');
@@ -81,7 +81,7 @@ function nextQuestion() {
     // }
 
     answerBtns.forEach((button, index) => {
-        button[index].innerText = questions[randomNum].answers[index].text;
+        button.innerText = questions[randomNum].answers[index].text;
     }); 
 
     console.log(randomNum);
