@@ -6,7 +6,7 @@ const gameOver = document.getElementById('game-over');
 
 // Declaring and assigning the different elements of the game
 // that will be interacted with.
-const answerBtns = document.getElementsByClassName('answer-btn')
+const answerBtns = document.getElementsByClassName('answer-btn');
 const answerOne = document.getElementById('answer-one');
 const answerTwo = document.getElementById('answer-two');
 const answerThree = document.getElementById('answer-three');
@@ -18,7 +18,6 @@ const startBtn = document.getElementById('start-button');
 const playAgainBtn = document.getElementById('play-again');
 const addHiscoreBtn = document.getElementById('add-hiscore');
 const scoreOutput = document.getElementById('score-output');
-const resultsText = document.getElementById('results');
 const inputHiscore = document.getElementById('input-hiscore');
 const inputBox = document.getElementById('input');
 const resultsDiv = document.getElementById('results-div');
@@ -34,7 +33,7 @@ answerTwo.addEventListener('click', checkAnswer);
 answerThree.addEventListener('click', checkAnswer);
 answerFour.addEventListener('click', checkAnswer);
 playAgainBtn.addEventListener('click', showStartMenu);
-addHiscoreBtn.addEventListener('click', addHiscore)
+addHiscoreBtn.addEventListener('click', addHiscore);
 submitBtn.addEventListener('click', submitHiscore);
 instructionsBtn.addEventListener('click', showInstructions);
 hiscoresBtn.addEventListener('click', showHiscores);
@@ -60,7 +59,7 @@ function showStartMenu() {
  * then runs the nextQuestion function.
  */
 function startQuiz() {
-    console.log('Started')
+    console.log('Started');
     startMenu.classList.add('hidden');
     mainQuiz.classList.remove('hidden');
     correctScore.innerText = correctScoreValue; 
@@ -83,7 +82,7 @@ function nextQuestion() {
 
     answerBtns.forEach((button, index) => {
         answerBtns.innerText = questions[randomNum].answers[index].text;
-    }) 
+    }); 
 
     console.log(randomNum);
 }
@@ -146,22 +145,22 @@ function addHiscore() {
  */
 function submitHiscore(){
     if(localStorage.getItem(inputBox.value)) {
-        console.log("Hiscore Exists for this name")
+        console.log("Hiscore Exists for this name");
         if(parseInt(localStorage.getItem(inputBox.value)) < correctScoreValue) {
-            console.log("Score is higher than current, updating")
+            console.log("Score is higher than current, updating");
             localStorage.setItem(inputBox.value, correctScoreValue);
             inputHiscore.classList.add('hidden');
             resultsDiv.classList.remove('hidden');
             showStartMenu();
         } else {
-            console.log("Score is lower, not updating")
+            console.log("Score is lower, not updating");
             inputHiscore.classList.add('hidden');
             resultsDiv.classList.remove('hidden');
             showStartMenu();
         }
     } else {
-        console.log("Hiscore not found for name")
-        console.log("Adding hiscore")
+        console.log("Hiscore not found for name");
+        console.log("Adding hiscore");
         localStorage.setItem(inputBox.value, correctScoreValue);
         inputHiscore.classList.add('hidden');
         resultsDiv.classList.remove('hidden');
@@ -245,7 +244,7 @@ function showHiscores() {
         3rd: ${thirdPlace[0]} : ${thirdPlace[1]}<br>
         4th: ${fourthPlace[0]} : ${fourthPlace[1]}<br>
         5th: ${fifthPlace[0]} : ${fifthPlace[1]}</h3>
-    `
+    `;
 
     if(questionArea.innerHTML === hiscoreText) {
         questionArea.innerHTML = titleText;
@@ -360,4 +359,4 @@ const questions = [
         ],
         correct: '17'
     }
-]
+];

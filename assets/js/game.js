@@ -1,11 +1,7 @@
 // Used WebDev Simplified's tutorial, and added extra features
-
-// Declaring the classes as constants and assigning the class name
 const X_CLASS = 'x';
 const O_CLASS = 'o';
 
-// Declaring an array of different combinations that would make
-// make a player win
 const WINNING_COMBINATIONS = [
     [0, 1, 2],
     [3, 4, 5],
@@ -15,10 +11,9 @@ const WINNING_COMBINATIONS = [
     [2, 5, 8],
     [0, 4, 8],
     [2, 4, 6]
-]
+];
 
-// Declaring the interactable elements of the game
-const gameSquares = document.querySelectorAll('[data-cell]')
+const gameSquares = document.querySelectorAll('[data-cell]');
 const gameGrid = document.getElementsByClassName('game-grid')[0];
 const restartButton = document.getElementById('reset-game');
 const winningText = document.getElementById('winning-text');
@@ -28,7 +23,6 @@ let hasPlayerWon = false;
 
 restartButton.addEventListener('click', startGame);
 
-// Starting the game
 startGame();
 
 /**
@@ -43,8 +37,8 @@ function startGame() {
         square.classList.remove(X_CLASS);
         square.classList.remove(O_CLASS);
         square.removeEventListener('click', checkSquare);
-        square.addEventListener('click', checkSquare, { once: true })
-    })
+        square.addEventListener('click', checkSquare, { once: true });
+    });
     setHoverClass();
     winningText.innerText = "Who will win?";
 }
@@ -91,7 +85,7 @@ function endGame(draw) {
 function isDraw() {
     return [...gameSquares].every(square => {
         return square.classList.contains(X_CLASS) || square.classList.contains(O_CLASS);
-    })
+    });
 }
 
 /**
@@ -131,6 +125,6 @@ function checkWin(currentClass) {
     return WINNING_COMBINATIONS.some(combination => {
         return combination.every(index => {
             return gameSquares[index].classList.contains(currentClass);
-        })
-    })
+        });
+    });
 }
