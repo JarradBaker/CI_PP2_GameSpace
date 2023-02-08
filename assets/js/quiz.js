@@ -59,7 +59,6 @@ function showStartMenu() {
  * then runs the nextQuestion function.
  */
 function startQuiz() {
-    console.log('Started');
     startMenu.classList.add('hidden');
     mainQuiz.classList.remove('hidden');
     correctScore.innerText = correctScoreValue; 
@@ -76,15 +75,10 @@ function nextQuestion() {
     randomNum = Math.floor(Math.random() * 10);
     question.innerText = questions[randomNum].question;
 
-    // for(let i = 0; i < 4; i++) {
-    //     answerBtns[i].innerText = questions[randomNum].answers[i].text;
-    // }
-
     answerBtns.forEach((button, index) => {
         button.innerText = questions[randomNum].answers[index].text;
     }); 
 
-    console.log(randomNum);
 }
 
 /**
@@ -145,22 +139,17 @@ function addHiscore() {
  */
 function submitHiscore(){
     if(localStorage.getItem(inputBox.value)) {
-        console.log("Hiscore Exists for this name");
         if(parseInt(localStorage.getItem(inputBox.value)) < correctScoreValue) {
-            console.log("Score is higher than current, updating");
             localStorage.setItem(inputBox.value, correctScoreValue);
             inputHiscore.classList.add('hidden');
             resultsDiv.classList.remove('hidden');
             showStartMenu();
         } else {
-            console.log("Score is lower, not updating");
             inputHiscore.classList.add('hidden');
             resultsDiv.classList.remove('hidden');
             showStartMenu();
         }
     } else {
-        console.log("Hiscore not found for name");
-        console.log("Adding hiscore");
         localStorage.setItem(inputBox.value, correctScoreValue);
         inputHiscore.classList.add('hidden');
         resultsDiv.classList.remove('hidden');
@@ -198,8 +187,6 @@ function showHiscores() {
     let fifthPlace = ["", 0];
 
     for(let i = 0; i < localStorage.length; i++) {
-        console.log('in the for');
-
         if(parseInt(localStorage.getItem(localStorage.key(i))) > firstPlace[1]) {
             if(firstPlace[1] !== null){
                 secondPlace = [firstPlace[0], firstPlace[1]];
