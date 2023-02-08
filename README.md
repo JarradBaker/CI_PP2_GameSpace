@@ -89,21 +89,19 @@ The website is designed with the following target audience in mind:
 ## Design
 
 ### Design Choices
-The website was designed to give a "street" feel to the users, which is why a colder colour theme was used. The images of products and skateboarding were used to engage the users.
+The website was designed to have a simplistic colour theme, which allows the text to be clear, and allow the user to focus more on the games. 
 
 ### Colour
-Colour was a very important aspect for engaging with the audience, as anything too childish, or bright may put visitors off. For this reason, I chose to use a nice cold themed colour set for the website, providing a "street" feel. For accessibility reasons, the colours were tested on Webaim using their contrast checker, and the darkest and lightest colours got a contrast ratio of 12.78:1 meaning that they were a great fit.
-![Colours image](docs/Colours.png)
+As explained above, the colour theme was simplstic, and the font and game colours contrast well with the background colour. I chose a sandy yellow for the background colour, and a red font for headings, links and buttons, and a blue font for more standard text.
 
 ### Fonts
-The chosen font for the website was "Quicksand", with sans serif as a backup font. I originally also used "Lobster" for headings, but I found that "Quicksand" fitted in much better for my target audience and the feel of the site, so I used a higher weight for the headings to make it appear bolder.
+I chose the font "orbitron" from google fonts for my logo text, and text for any features, or interactables for the games. I chose this font, as it looks very "futuristic" and "cyber like". This ties in wel with the theme of the site. For standard text I chose the font "lucida sans", as it provides a nice contrast, and is clear.
 
 ### Structure
-To keep the user interface as beginner friendly, and simple as possible, I went for a classic looking nav bar style. It is a simple layout with the logo to the left on desktops, and above on mobile. The theme remains the same throughout all four pages:
-- Index page: Shows an image of a skateboarder and why you would choose the company. Also contains the history of the company.
-- Tricks page: Gives explanations of how to perform various tricks, enriching the users skateboarding experience. Also has a video for each trick.
-- Boards page: Allows the users to see the products that are available.
-- Contact page: Gives users a chance to communicate with the company, and also shows a real map displaying where the physical store is.
+To make navigation as imple as possible, and looking appealing, I used a hamburger nav bar for the mobile view, and a standard styles nav bar for larger screens. I also decided to make the footer appear on mobile devices only when scrolling down, to give the user a better area for the games on smaller screens. The theme remains the same throughout all four pages:
+- Index page: Contains the Quiz game, and all of it's different screen states.
+- Tricks page: Contains the Naughts and Crosses game.
+- Contact page: Gives users a chance to provide feedback through a contact form.
 
 ### Wireframes
 <details><summary>Home</Summary>
@@ -128,6 +126,7 @@ To keep the user interface as beginner friendly, and simple as possible, I went 
 The following languages were used to develop the website:
 - HTML
 - CSS
+- Javascript
 
 ### Frameworks and Tools
 The following frameworks and tools were used to develop the website:
@@ -138,6 +137,9 @@ The following frameworks and tools were used to develop the website:
 - Font Awesome
 - Balsamiq
 - Favicon.io
+- Email.js
+- Quotable.io (for the quotes in the footer)
+<!-- -Start from here  -->
 
 ## Features
 The website contains 5 pages including the 404 page, and a total of 13 features
