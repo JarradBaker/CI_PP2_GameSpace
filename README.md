@@ -40,27 +40,23 @@
 ## Project Goals
 
 ### User Goals
-- Find good quality skateboards
-- See examples of pricing for the products
-- Learn more about skateboarding
-- Find the location of the store
-- Learn what makes this company different
-- Learn how to use skateboards
+- Play Naughts and Crosses
+- Play a quiz game
+- Save their hiscores
+- Contact the website about fixes/improvements
 
 ### Website Owner Goals
 - Reach the target audience
-- Increase the traffic and sales
-- Direct interaction with customers
-- Show what makes this company different
+- Direct interaction with users
+- Provide games for users
 
 ## User Experience
 
 ### Target Audience
 The website is designed with the following target audience in mind:
-- Skateboarders looking to buy a new board
-- People looking to get in to skateboarding
-- Physical skating shops looking for stock
-- Skateboarders looking to learn new tricks
+- People looking to play a quiz game
+- People looking to play Naughts and Crosses
+- Peaople looking to play games
 
 ### User Requirements and Expectations
 - Simplistic user interface
