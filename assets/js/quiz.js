@@ -81,7 +81,7 @@ function nextQuestion() {
     // }
 
     answerBtns.forEach((button, index) => {
-        answerBtns.innerText = questions[randomNum].answers[index].text;
+        button[index].innerText = questions[randomNum].answers[index].text;
     }); 
 
     console.log(randomNum);
