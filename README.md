@@ -61,36 +61,30 @@ The website is designed with the following target audience in mind:
 ### User Requirements and Expectations
 - Simplistic user interface
 - Smooth Navigation System
-- Easy to find relevant information
+- Easy to play the games
 - All social links direct to the correct website
 - Presentation of content is clear
-- Visually appealing design
 - Accessibility
-- Media and functions work as expected
+- Games work as expected
 
 ### User Stories
 
 #### First Time User
-1. As a first time user, I want to understand the product
-2. As a first time user, I want to learn about the company
-3. As a first time user, I want to know how much the product costs
-4. As a first time user, I want to learn more about skateboarding
-5. As a first time user, I want to learn how to use the product
-6. As a first time user, I want to ask questions about my order
-7. As a first time user, I want to know why to choose this company
-8. As a first time user, I want to be able to navigate the site easily
+1. As a first time user, I want to be able to play Naughts and Crosses
+2. As a first time user, I want to be able to play a quiz
+3. As a first time user, I want to contact the developer with feedback
+4. As a first time user, I want to be able to save my hiscores
+5. As a first time user, I want to be able to navigate the site easily
 
 #### Returning User
-9. As a returning user, I want to be able to contact the company
-10. As a returning user, I want to learn more tricks
-11. As a returning user, I want to learn where a physical store is
-12. As a returning user, I want to look at products
+6. As a returning user, I want to be able to contact the developer with suggested fixes and updates
+7. As a returning user, I want to view my hiscores
+8. As a returning user, I want to be able to play easily across my devices
 
 #### Site Owner
-13. As a site owner, I want users to find out about our products
-14. As a site owner, I want users to have a good visual experience when using the website
+9. As a site owner, I want users to be able to play the games
+14. As a site owner, I want users to be able to save, and show their hiscores
 15. As a site owner, I want users to be able to see a 404 page if anything goes wrong
-16. As a site owner, I want to enrich our users' skateboarding experience
 
 ## Design
 
