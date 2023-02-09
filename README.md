@@ -1,7 +1,7 @@
 # Game Space
 (Developer: Jarrad Baker)
 
-![Mockup image](docs/responsive.png)
+![Mockup image](docs/Responsive.png)
 
 [Live webpage](https://jarradbaker.github.io/CI_PP2_GameSpace/)
 
@@ -153,6 +153,16 @@ The website contains 5 pages including the 404 page, and a total of 13 features
 <img src="docs/features/Header.png">  
 </details>
 
+### Hamburger Menu
+- Shows on every page
+- The nav links stack under the logo on smaller screens making it responsive
+- Enables easy and smooth navigation
+- The current page is highlighted in blue
+- User Stories: 8, 14
+<details><summary>Header</Summary>
+<img src="docs/features/Header.png">  
+</details>
+
 ### Footer
 - Shows on every page like the header
 - Like the header, the social links also stack underneath the copyright text on smaller screens
@@ -161,15 +171,17 @@ The website contains 5 pages including the 404 page, and a total of 13 features
 <img src="docs/features/Footer.png">  
 </details>
 
-### Tricks
-- Shows users explanations as well as videos on how to do tricks, enhancing their exoperience.
-- Has an introduction, and an outro
-- User Stories: 1, 4, 5, 10, 16
-<details><summary>Tricks</Summary>
-<img src="docs/features/Tricks.png">  
+### Random Quote
+- Shows on every page
+- The nav links stack under the logo on smaller screens making it responsive
+- Enables easy and smooth navigation
+- The current page is highlighted in blue
+- User Stories: 8, 14
+<details><summary>Header</Summary>
+<img src="docs/features/Header.png">  
 </details>
 
-### Trick videos
+### Quiz Game
 - Part of the tricks page
 - Has a video with controls explaining how to do the trick
 - User Stories: 1, 4, 5, 10, 16
@@ -177,7 +189,7 @@ The website contains 5 pages including the 404 page, and a total of 13 features
 <img src="docs/features/TrickVideos.png">  
 </details>
 
-### Hero Image
+### Saving and Showing Hiscores
 - Makes the website more appealing and professional looking
 - Connects with the target audience
 - User Stories: 14
@@ -185,37 +197,12 @@ The website contains 5 pages including the 404 page, and a total of 13 features
 <img src="docs/features/HeroImage.png">  
 </details>
 
-### Why Choose Us?
+### Naughts and Crosses Game
 - Explains how the site differs from competitors
 - Provides users more info about the products
 - User Stories: 1, 7, 13
 <details><summary>Why Choose Us</Summary>
 <img src="docs/features/WhyChooseUs.png">  
-</details>
-
-### History
-- Gives the user an explanation of the company/website
-- Tells the personal story of the companies creation
-- User Stories: 2, 7
-<details><summary>History</Summary>
-<img src="docs/features/History.png">  
-</details>
-
-### Boards
-- Allows users to see all products available
-- Located on the Boards page
-- User Stories: 1, 3, 12, 13
-<details><summary>Boards</Summary>
-<img src="docs/features/Boards.png">  
-</details>
-
-### Products
-- Shows the user the individual info for each product
-- Allows them to purchase the item
-- Located on the boards page
-- User Stories: 1, 3, 12, 13
-<details><summary>Products</Summary>
-<img src="docs/features/Products.png">  
 </details>
 
 ### Contact form
@@ -225,22 +212,6 @@ The website contains 5 pages including the 404 page, and a total of 13 features
 - User Stories: 6, 9
 <details><summary>Contact Form</Summary>
 <img src="docs/features/ContactForm.png">  
-</details>
-
-### Google Map
-- Shows the location of the physical store on a google maps window
-- Located on the contact page
-- User Stories: 2, 9, 11
-<details><summary>Google Map</Summary>
-<img src="docs/features/GoogleMap.png">  
-</details>
-
-### Address
-- Provides the physical store location
-- Located above the google map
-- User Stories: 2, 9, 11
-<details><summary>Address</Summary>
-<img src="docs/features/Address.png">  
 </details>
 
 ### 404 page
