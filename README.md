@@ -1,7 +1,7 @@
 # Game Space
 (Developer: Jarrad Baker)
 
-![Mockup image](docs/Responsive.png)
+![Mockup image](docs/Responsive.jpg)
 
 [Live webpage](https://jarradbaker.github.io/CI_PP2_GameSpace/)
 
