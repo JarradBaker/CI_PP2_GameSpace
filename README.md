@@ -258,8 +258,11 @@ The website contains 5 pages including the 404 page, and a total of 13 features
 The Nu HTML Checker (W3C) is used to validate HTML documents. This ensures that all unintended mistakes are spotted before release, so that they can be corrected. All of my pages passed the check without any errors, including the 404 page.
 
 index.html(quiz) - [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjarradbaker.github.io%2FCI_PP2_GameSpace%2Findex.html) - No errors or warnings
+
 game.html(Naughts and Crosses) - [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjarradbaker.github.io%2FCI_PP2_GameSpace%2Fgame.html) - No errors or warnings
+
 contact.html(Contact Form) - [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjarradbaker.github.io%2FCI_PP2_GameSpace%2Fcontact.html) - No errors or warnings
+
 404.html(404 page) - 
 
 ### CSS Validation
