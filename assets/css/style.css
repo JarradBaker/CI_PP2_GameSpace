@@ -24,10 +24,6 @@ header {
     
 }
 
-header nav {
-    
-}
-
 header nav .grid-wrapper {
     display: flex;
     justify-content: space-between;
