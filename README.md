@@ -100,24 +100,21 @@ I chose the font "orbitron" from google fonts for my logo text, and text for any
 ### Structure
 To make navigation as imple as possible, and looking appealing, I used a hamburger nav bar for the mobile view, and a standard styles nav bar for larger screens. I also decided to make the footer appear on mobile devices only when scrolling down, to give the user a better area for the games on smaller screens. The theme remains the same throughout all four pages:
 - Index page: Contains the Quiz game, and all of it's different screen states.
-- Tricks page: Contains the Naughts and Crosses game.
+- Game page: Contains the Naughts and Crosses game.
 - Contact page: Gives users a chance to provide feedback through a contact form.
 
 ### Wireframes
-<details><summary>Home</Summary>
-<img src="docs/wireframes/index.png">  
+<details><summary>Index(Quiz)</Summary>
+<img src="docs/wireframes/PP2index.png">  
 </details>
-<details><summary>Tricks</Summary>
-<img src="docs/wireframes/tricks.png">  
-</details>
-<details><summary>Boards</Summary>
-<img src="docs/wireframes/boards.png">  
+<details><summary>Game</Summary>
+<img src="docs/wireframes/PP2game.png">  
 </details>
 <details><summary>Contact</Summary>
-<img src="docs/wireframes/contact.png">  
+<img src="docs/wireframes/PP2contact.png">  
 </details>
 <details><summary>404</Summary>
-<img src="docs/wireframes/404.png">  
+<img src="docs/wireframes/PP2404.png">  
 </details>
 
 ## Technologies Used
@@ -144,8 +141,7 @@ The following frameworks and tools were used to develop the website:
 The website contains 5 pages including the 404 page, and a total of 13 features
 
 ### Header (logo and navigation)
-- Shows on every page
-- The nav links stack under the logo on smaller screens making it responsive
+- Shows on every page when not on mobile
 - Enables easy and smooth navigation
 - The current page is highlighted in blue
 - User Stories: 8, 14
@@ -154,18 +150,17 @@ The website contains 5 pages including the 404 page, and a total of 13 features
 </details>
 
 ### Hamburger Menu
-- Shows on every page
-- The nav links stack under the logo on smaller screens making it responsive
+- Shows on every page when on mobile
+- Clicking it shows the nav links
 - Enables easy and smooth navigation
-- The current page is highlighted in blue
 - User Stories: 8, 14
-<details><summary>Header</Summary>
-<img src="docs/features/Header.png">  
+<details><summary>Hamburger</Summary>
+<img src="docs/features/Hamburger.png">  
 </details>
 
 ### Footer
 - Shows on every page like the header
-- Like the header, the social links also stack underneath the copyright text on smaller screens
+- The social links also stack underneath the copyright text on smaller screens
 - User Stories: 2, 8, 14
 <details><summary>Footer</Summary>
 <img src="docs/features/Footer.png">  
@@ -173,41 +168,42 @@ The website contains 5 pages including the 404 page, and a total of 13 features
 
 ### Random Quote
 - Shows on every page
-- The nav links stack under the logo on smaller screens making it responsive
-- Enables easy and smooth navigation
-- The current page is highlighted in blue
+- Is a part of the footer
+- Shows a random quote
 - User Stories: 8, 14
-<details><summary>Header</Summary>
-<img src="docs/features/Header.png">  
+<details><summary>Random Quote</Summary>
+<img src="docs/features/Quote.png">  
 </details>
 
 ### Quiz Game
-- Part of the tricks page
-- Has a video with controls explaining how to do the trick
+- Provides one of the games for the user
+- Allows them to interact with the site
 - User Stories: 1, 4, 5, 10, 16
-<details><summary>Trick Videos</Summary>
-<img src="docs/features/TrickVideos.png">  
+<details><summary>Quiz Game</Summary>
+<img src="docs/features/Quiz.png">  
 </details>
 
 ### Saving and Showing Hiscores
-- Makes the website more appealing and professional looking
-- Connects with the target audience
+- Built in to the quiz game
+- Allows players to save their score
+- Allows returning players to see their Hiscores
 - User Stories: 14
-<details><summary>Hero Image</Summary>
-<img src="docs/features/HeroImage.png">  
+<details><summary>Saving and Showing Hiscores</Summary>
+<img src="docs/features/Hiscores.png">  
 </details>
 
 ### Naughts and Crosses Game
-- Explains how the site differs from competitors
-- Provides users more info about the products
+- Provides the other game for the user and a friend
+- Two player game
+- Has a button to reset the game
 - User Stories: 1, 7, 13
-<details><summary>Why Choose Us</Summary>
-<img src="docs/features/WhyChooseUs.png">  
+<details><summary>Naughts and Crosses</Summary>
+<img src="docs/features/OandXs.png">  
 </details>
 
 ### Contact form
-- Allows users to contact the site owner/company
-- Can be used to chase up an order
+- Allows users to contact the site owner/developer
+- Can be used to provide feedback/suggest improvements
 - Located on the contact page
 - User Stories: 6, 9
 <details><summary>Contact Form</Summary>
