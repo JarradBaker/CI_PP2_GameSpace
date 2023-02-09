@@ -34,7 +34,7 @@ header nav h2 {
 
 header nav h2 a {
     text-decoration: none;
-    color: #B00909;
+    color: #980707;
     font-family: 'Orbitron', sans-serif;
     font-size: 1.5rem;
 }
@@ -76,7 +76,7 @@ header nav .hamburger {
 
 .grid-wrapper .nav-links li a {
     text-decoration: none;
-    color: #FF0000;
+    color: #980707;
     font-weight: bold;
     transition: 0.3s ease;
     display: block;
@@ -116,7 +116,7 @@ footer #social {
 }
 
 footer #social a {
-    color: #FF0000;
+    color: #980707;
     transition: 0.3s ease;
 }
 
@@ -142,7 +142,7 @@ footer #social a:hover {
 .btn {
     background-color: #FFFFFF;
     border-radius: 10px;
-    color: #FF0000;
+    color: #980707;
     font-weight: bold;
     font-size: 1.1rem;
     padding: 5px;
@@ -151,7 +151,7 @@ footer #social a:hover {
 }
 
 .btn:hover {
-    border: solid #FF0000 2px;
+    border: solid #980707 2px;
 }
 
 .big-txt {
@@ -305,7 +305,7 @@ footer #social a:hover {
     width: 100%;
     height: 50px;
     background-color: #FFFFFF;
-    color: #FF0000;
+    color: #980707;
     font-size: 1.25rem;
     text-align: center;
     font-weight: bold;
@@ -325,7 +325,7 @@ footer #social a:hover {
     width: 100%;
     height: 90vh;
     background-color: #f5eec2;
-    color: #FF0000;
+    color: #980707;
     text-align: center;
 }
 
@@ -349,7 +349,7 @@ footer #social a:hover {
     max-width: 50%;
     margin: 5px auto;
     text-align: center;
-    color: #FF0000;
+    color: #980707;
 }
 
 
@@ -374,7 +374,7 @@ footer #social a:hover {
 }
 
 .game-grid .game-grid-square {
-    border: solid red 1px;
+    border: solid #980707 1px;
     height: 100px;
     width: 100px;
     display: flex;
