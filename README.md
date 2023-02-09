@@ -139,7 +139,6 @@ The following frameworks and tools were used to develop the website:
 - Favicon.io
 - Email.js
 - Quotable.io (for the quotes in the footer)
-<!-- -Start from here  -->
 
 ## Features
 The website contains 5 pages including the 404 page, and a total of 13 features
@@ -258,38 +257,20 @@ The website contains 5 pages including the 404 page, and a total of 13 features
 
 The Nu HTML Checker (W3C) is used to validate HTML documents. This ensures that all unintended mistakes are spotted before release, so that they can be corrected. All of my pages passed the check without any errors, including the 404 page.
 
-<details><summary>Home</Summary>
-<img src="docs/Validation/HTML/index.png">  
-</details>
+index.html(quiz) - [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjarradbaker.github.io%2FCI_PP2_GameSpace%2Findex.html) - No errors or warnings
 
-<details><summary>Tricks</Summary>
-<img src="docs/Validation/HTML/tricks.png">  
-</details>
+game.html(Naughts and Crosses) - [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjarradbaker.github.io%2FCI_PP2_GameSpace%2Fgame.html) - No errors or warnings
 
-<details><summary>Boards</Summary>
-<img src="docs/Validation/HTML/boards.png">  
-</details>
+contact.html(Contact Form) - [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjarradbaker.github.io%2FCI_PP2_GameSpace%2Fcontact.html) - No errors or warnings
 
-<details><summary>Contact</Summary>
-<img src="docs/Validation/HTML/contact.png">   
-</details>
-
-<details><summary>404</Summary>
-<img src="docs/Validation/HTML/404.png">
-</details>
+404.html(404 page) - 
 
 ### CSS Validation
 
 The W3C Jigsaw CSS Validation Service is used in exactly the same way as the Nu HTML Validator, but for CSS. I ran both my actual style.css file, and an actual web page through it, and both passed without any errors.
 
-<details><summary>Web Page</Summary>
-<img src="docs/Validation/CSS/CSS.png">
-</details>
-
-<details><summary>Stylesheet</Summary>
-<img src="docs/Validation/CSS/stylesheet.png">
-</details>
-
+CSS [results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjarradbaker.github.io%2FCI_PP2_GameSpace%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - No errors found
+<!-- Finished here -->
 ### Accessibility
 
 The WAVE web accessibility evaluation tool by WebAIM was used to ensure the webpages met accessibility standards. All 5 pages passed without any errors.
