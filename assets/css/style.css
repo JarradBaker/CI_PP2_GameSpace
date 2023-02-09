@@ -19,7 +19,6 @@ body {
 /*************************/
 header {
     height: 10vh;
-    padding: auto 0;
     padding: 3vh 0;
     
 }
@@ -37,7 +36,6 @@ header nav h2 a {
     text-decoration: none;
     color: #FF0000;
     font-family: 'Orbitron', sans-serif;
-    font-weight: 900px;
     font-size: 1.5rem;
 }
 
