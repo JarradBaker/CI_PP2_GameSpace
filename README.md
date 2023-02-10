@@ -93,6 +93,9 @@ The website was designed to have a simplistic colour theme, which allows the tex
 
 ### Colour
 As explained above, the colour theme was simplstic, and the font and game colours contrast well with the background colour. I chose a sandy yellow for the background colour, and a red font for headings, links and buttons, and a blue font for more standard text.
+<details><summary>Colour</Summary>
+<img src="docs/Colour.jpg">  
+</details>
 
 ### Fonts
 I chose the font "orbitron" from google fonts for my logo text, and text for any features, or interactables for the games. I chose this font, as it looks very "futuristic" and "cyber like". This ties in wel with the theme of the site. For standard text I chose the font "lucida sans", as it provides a nice contrast, and is clear.
@@ -189,7 +192,8 @@ The website contains 5 pages including the 404 page, and a total of 13 features
 - Allows returning players to see their Hiscores
 - User Stories: 14
 <details><summary>Saving and Showing Hiscores</Summary>
-<img src="docs/features/Hiscores.png">  
+<img src="docs/features/Hiscores.png"> 
+<img src="docs/features/Hiscores2.png"> 
 </details>
 
 ### Naughts and Crosses Game
@@ -198,7 +202,7 @@ The website contains 5 pages including the 404 page, and a total of 13 features
 - Has a button to reset the game
 - User Stories: 1, 7, 13
 <details><summary>Naughts and Crosses</Summary>
-<img src="docs/features/OandXs.png">  
+<img src="docs/features/OsandXs.png">  
 </details>
 
 ### Contact form
