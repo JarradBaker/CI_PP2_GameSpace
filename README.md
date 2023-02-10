@@ -237,25 +237,21 @@ contact.html(Contact Form) - [results](https://validator.w3.org/nu/?doc=https%3A
 The W3C Jigsaw CSS Validation Service is used in exactly the same way as the Nu HTML Validator, but for CSS. I ran both my actual style.css file, and an actual web page through it, and both passed without any errors.
 
 CSS [results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjarradbaker.github.io%2FCI_PP2_GameSpace%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - No errors found
-<!-- Finished here -->
+
 ### Accessibility
 
 The WAVE web accessibility evaluation tool by WebAIM was used to ensure the webpages met accessibility standards. All 5 pages passed without any errors.
 
-<details><summary>Home</Summary>
-<img src="docs/Validation/Accessibility/index.png">
+<details><summary>Index(quiz)</Summary>
+<img src="docs/accessibility/index.png">
 </details>
 
-<details><summary>Tricks</Summary>
-<img src="docs/Validation/Accessibility/tricks.PNG">
+<details><summary>Game</Summary>
+<img src="docs/accessibility/game.PNG">
 </details>
 
 <details><summary>Boards</Summary>
-<img src="docs/Validation/Accessibility/boards.PNG">
-</details>
-
-<details><summary>Contact</Summary>
-<img src="docs/Validation/Accessibility/contact.PNG">
+<img src="docs/accessibility/contact.PNG">
 </details>
 
 <details><summary>404</Summary>
@@ -266,24 +262,20 @@ The WAVE web accessibility evaluation tool by WebAIM was used to ensure the webp
 
 The Google Lighthouse tool, within the Google Chrome Developer Tools was used to ensure that each page met a high performance rating. This shows that the website will load efficiently over various devices.
 
-<details><summary>Home</Summary>
-<img src="docs/Validation/Performance/index.png">
+<details><summary>Index(quiz)</Summary>
+<img src="docs/performance/index.png">
 </details>
 
-<details><summary>Tricks</Summary>
-<img src="docs/Validation/Performance/tricks.png">
-</details>
-
-<details><summary>Boards</Summary>
-<img src="docs/Validation/Performance/boards.png">
+<details><summary>Game</Summary>
+<img src="docs/performance/game.png">
 </details>
 
 <details><summary>Contact</Summary>
-<img src="docs/Validation/Performance/contact.png">
+<img src="docs/performance/contact.png">
 </details>
 
 <details><summary>404</Summary>
-<img src="docs/Validation/Performance/404.png">
+<img src="docs/performance/404.png">
 </details>
 
 ### Performance tests on various devices
@@ -304,7 +296,7 @@ The website was tested on several web browsers to ensure consistency. The browse
 - Brave Browser (A Chrome based browser)
 - Mozilla Firefox
 - Opera GX
-
+<!-- Finished here -->
 ### Testing User Stories
 
 1. As a first time user, I want to understand the product
