@@ -95,7 +95,7 @@ The website was designed to have a simplistic colour theme, which allows the tex
 ### Colour
 As explained above, the colour theme was simplstic, and the font and game colours contrast well with the background colour. I chose a sandy yellow for the background colour, and a red font for headings, links and buttons, and a blue font for more standard text.
 <details><summary>Colour</Summary>
-<img src="docs/Colour.jpg">  
+<img src="docs/Colours.jpg">  
 </details>
 
 ### Fonts
@@ -165,7 +165,7 @@ The website contains 5 pages including the 404 page, and a total of 13 features
 ### Footer
 - Shows on every page like the header
 - The social links also stack underneath the copyright text on smaller screens
-- User Stories: 2, 8, 12
+- User Stories: 8, 12
 <details><summary>Footer</Summary>
 <img src="docs/features/Footer.png">  
 </details>
@@ -260,7 +260,7 @@ The WAVE web accessibility evaluation tool by WebAIM was used to ensure the webp
 </details>
 
 <details><summary>404</Summary>
-<img src="docs/Validation/Accessibility/404.jpg">
+<img src="docs/accessibility/404.jpg">
 </details>
 
 ### Performance
@@ -355,13 +355,13 @@ The website was tested on several web browsers to ensure consistency. The browse
   </details>
 
 </details>
-<!-- HERERERERE -->
-5. As a first time user, I want to learn how to use the product
+
+5. As a first time user, I want to be able to navigate the site easily
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Tricks | Navigate to the Tricks page and find any Trick | See the tricks | Works as expected |
-| Trick Videos | Navigate to the Tricks page and find any Trick Video | See the trick videos | Works as expected |
+| Header | At the top of every page | See the header and navigation links | Works as expected |
+| Hamburger Menu | At the top of every page when the screen width is < 501px | See the hamburger menu and interact with it | Works as expected |
 
 <details><summary>Screenshots</Summary>
   <details><summary>Tricks</Summary>
@@ -372,11 +372,11 @@ The website was tested on several web browsers to ensure consistency. The browse
   </details>
 </details>
 
-6. As a first time user, I want to ask questions about my order
+6. As a returning user, I want to be able to contact the developer with suggested fixes and updates
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Contact form | Navigate to the Contact page | See the Contact form and be able to fill it in | Works as expected |
+| Contact Form | Navigate to the Contact page | Fill in the form and it emails the site owner | Works as expected |
 
 <details><summary>Screenshots</Summary>
   <details><summary>Contact Form</Summary>
@@ -384,31 +384,29 @@ The website was tested on several web browsers to ensure consistency. The browse
   </details>
 </details>
 
-7. As a first time user, I want to know why to choose this company
+7. As a returning user, I want to view my hiscores
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Why Choose Us? | Navigate to the Home page and scoll down | See the Why Choose Us? section | Works as expected |
-| History | Navigate to the Home page and scroll down to the bottom | See the History of Skate Shack section | Works as expected |
+| Saving and Showing Hiscores | On the Quiz page either before or after completing quiz, press the Hiscores or Add Hiscores buton | Save and show hiscores | Works as expected |
 
 <details><summary>Screenshots</Summary>
   <details><summary>Why Choose Us?</Summary>
     <img src="docs/Validation/UserStoryTests/WhyChooseUsTestStep1.png">
     <img src="docs/Validation/UserStoryTests/WhyChooseUsTestStep2.png">
   </details>
-  <details><summary>History</Summary>
-    <img src="docs/Validation/UserStoryTests/HistoryTestStep1.png">
-    <img src="docs/Validation/UserStoryTests/HistoryTestStep2.png">
-  </details>
+  
 </details>
 
-8. As a first time user, I want to be able to navigate the site easily
+8. As a returning user, I want to be able to play easily across my devices
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Header | Scroll up to the top of any page | See the logo and nav bar | Works as expected |
-| Footer | Scroll down to the bottom of any page | See the social links | Works as expected |
-| 404 Page | If a link is broken, or the url is entered incorrectly | See the 404 Page | Works as expected |
+| Hamburger Menu | At the top of every page when the screen width is < 501px | See the hamburger menu and interact with it | Works as expected |
+| Footer | At the bottom of every page, and is either visible or you need to scroll depending on screen size | See the Footer | Works as expected |
+| Random Quote | At the bottom of every page, as it is part of the footer | See the Random Quotes and Authors | Works as expected |
+| Quiz | Navigate to the Quiz page and play the quiz | Game works as expected | Works as expected |
+| Naughts and Crosses | Navigate to the Game page and play the game | Game works as expected | Works as expected |
 
 <details><summary>Screenshots</Summary>
   <details><summary>Header</Summary>
@@ -422,13 +420,12 @@ The website was tested on several web browsers to ensure consistency. The browse
   </details>
 </details>
 
-9. As a returning user, I want to be able to contact the company
+9. As a site owner, I want users to be able to play the games
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Contact form | Navigate to the Contact page | See the Contact form and be able to fill it in | Works as expected |
-| Google Map | Navigate to the Contact page | See the Google Map | Works as expected |
-| Address | Navigate to the Contact page | See the Address above the Google Map | Works as expected |
+| Quiz | Navigate to the Quiz page and play the quiz | Game works as expected | Works as expected |
+| Naughts and Crosses | Navigate to the Game page and play the game | Game works as expected | Works as expected |
 
 <details><summary>Screenshots</Summary>
   <details><summary>Contact Form</Summary>
@@ -442,12 +439,11 @@ The website was tested on several web browsers to ensure consistency. The browse
   </details>
 </details>
 
-10. As a returning user, I want to learn more tricks
+10. As a site owner, I want users to be able to save, and show their hiscores
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Tricks | Navigate to the Tricks page and find any Trick | See the tricks | Works as expected |
-| Trick Videos | Navigate to the Tricks page and find any Trick Video | See the trick videos | Works as expected |
+| Saving and Showing Hiscores | On the Quiz page either before or after completing quiz, press the Hiscores or Add Hiscores buton | Save and show hiscores | Works as expected |
 
 <details><summary>Screenshots</Summary>
   <details><summary>Tricks</Summary>
@@ -458,12 +454,11 @@ The website was tested on several web browsers to ensure consistency. The browse
   </details>
 </details>
 
-11. As a returning user, I want to learn where a physical store is
+11. As a site owner, I want users to be able to see a 404 page if anything goes wrong
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Google Map | Navigate to the Contact page | See the Google Map | Works as expected |
-| Address | Navigate to the Contact page | See the Address above the Google Map | Works as expected |
+| 404 Page | Anything goes wrong, or you miss type the url | See the 404 Page | Works as expected |
 
 <details><summary>Screenshots</Summary>
   <details><summary>Google Map</Summary>
@@ -474,12 +469,13 @@ The website was tested on several web browsers to ensure consistency. The browse
   </details>
 </details>
 
-12. As a returning user, I want to look at products
+12. As a site owner, I want users to have a good experience.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Boards | Navigate to the Boards page | See the page containing all the products | Works as expected |
-| Products | Navigate to the Boards page, and scroll down | See all of the products available | Works as expected |
+| Footer | At the bottom of every page, and is either visible or you need to scroll depending on screen size | See the Footer | Works as expected |
+| Random Quote | At the bottom of every page, as it is part of the footer | See the Random Quotes and Authors | Works as expected |
+| 404 Page | Anything goes wrong, or you miss type the url | See the 404 Page | Works as expected |
 
 <details><summary>Screenshots</Summary>
   <details><summary>Boards</Summary>
@@ -487,70 +483,6 @@ The website was tested on several web browsers to ensure consistency. The browse
   </details>
   <details><summary>Products</Summary>
     <img src="docs/Validation/UserStoryTests/ProductsTest.png">
-  </details>
-</details>
-
-13. As a site owner, I want users to find out about our products
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Boards | Navigate to the Boards page | See the page containing all the products | Works as expected |
-| Products | Navigate to the Boards page, and scroll down | See all of the products available | Works as expected |
-
-<details><summary>Screenshots</Summary>
-  <details><summary>Boards</Summary>
-    <img src="docs/Validation/UserStoryTests/BoardsTest.png">
-  </details>
-  <details><summary>Products</Summary>
-    <img src="docs/Validation/UserStoryTests/ProductsTest.png">
-  </details>
-</details>
-
-14. As a site owner, I want users to have a good visual experience when using the website
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Header | Scroll up to the top of any page | See the logo and nav bar | Works as expected |
-| Footer | Scroll down to the bottom of any page | See the social links | Works as expected |
-| Hero Image | Navigate to the top of the Home page | See the Hero Image and cover text | Works as expected |
-
-<details><summary>Screenshots</Summary>
-  <details><summary>Header</Summary>
-    <img src="docs/Validation/UserStoryTests/HeaderTest.png">
-  </details>
-  <details><summary>Footer</Summary>
-    <img src="docs/Validation/UserStoryTests/FooterTest.png">
-  </details>
-  <details><summary>Hero Image</Summary>
-    <img src="docs/Validation/UserStoryTests/HeroImageTest.png">
-  </details>
-</details>
-
-15. As a site owner, I want users to be able to see a 404 page if anything goes wrong
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| 404 Page | If a link is broken, or the url is entered incorrectly | See the 404 Page | Works as expected |
-
-<details><summary>Screenshots</Summary>
-  <details><summary>404</Summary>
-    <img src="docs/Validation/UserStoryTests/404Test.png">
-  </details>
-</details>
-
-16. As a site owner, I want to enrich our users' skateboarding experience
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Tricks | Navigate to the Tricks page and find any Trick | See the tricks | Works as expected |
-| Trick Videos | Navigate to the Tricks page and find any Trick Video | See the trick videos | Works as expected |
-
-<details><summary>Screenshots</Summary>
-  <details><summary>Tricks</Summary>
-    <img src="docs/Validation/UserStoryTests/TricksTest.png">
-  </details>
-  <details><summary>Tricks Videos</Summary>
-    <img src="docs/Validation/UserStoryTests/TricksVideosTest.png">
   </details>
 </details>
 
