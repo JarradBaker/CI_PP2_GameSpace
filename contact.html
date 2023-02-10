@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Contact</title>
-
 </head>
 <body>
     <header>
@@ -29,11 +28,17 @@
         </nav>
     </header>
     
+    <!-- Main section with the form -->
     <main>
+        <!-- Creating the contact form -->
         <form id="contact-form">
+            <!-- Message to the users -->
             <p>Please don't hesitate to contact us if there are any issues with the games, or to provide feedback, or suggest improvements!</p>
+            <!-- Dividing each group of labels and inputs -->
             <div class="divider">
+                <!-- Label -->
                 <label for="full-name" class="form-label">Full Name:</label>
+                <!-- Input -->
                 <input type="text" class="form-input" id="full-name" name="full-name" required>
             </div>
             <div class="divider">
@@ -42,8 +47,10 @@
             </div>
             <div class="divider">
                 <label for="message" class="form-label">Message:</label>
+                <!-- Text area -->
                 <textarea name="message" id="message" class="form-input" cols="30" rows="5" required></textarea>
             </div>
+            <!-- Submit Button -->
             <input type="submit" name="submit-btn" id="submit-btn" class="btn" value="Submit">
         </form>
     </main>

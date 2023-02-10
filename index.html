@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Linking the stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Quiz</title>
 </head>
 <body>
+    <!-- Header with nav bar -->
     <header>
         <nav>
             <div class="grid-wrapper">
@@ -28,8 +30,9 @@
         </nav>
     </header>
 
+    <!-- Game container holding all states -->
     <div class="game-container">
-
+        <!-- Start menu -->
         <div id="start-menu" class="">
             <div id="menu-buttons">
                 <button id="hiscores" class="btn-menu btn">HiScores</button>
@@ -45,6 +48,7 @@
             </div>
         </div>
 
+        <!-- The actual quiz state -->
         <div id="main-quiz" class="hidden">
             <div id="scores">
                 <span id="correct-label">Correct: <span id="correct-score">0</span></span>
@@ -61,14 +65,9 @@
                     <button id="answer-four" class="answer-btn btn">Answer 4</button>
                 </div>
             </div>
-            <!-- <div id="answer-buttons">
-                <button id="answer-one" class="answer-btn btn">Answer 1</button>
-                <button id="answer-two" class="answer-btn btn">Answer 2</button>
-                <button id="answer-three" class="answer-btn btn">Answer 3</button>
-                <button id="answer-four" class="answer-btn btn">Answer 4</button>
-            </div> -->
         </div>
 
+        <!-- Game over state -->
         <div id="game-over" class="hidden">
             <div id="results" class="">
                 <div id="results-div">
@@ -87,11 +86,14 @@
         </div>
     </div>
 
+    <!-- Footer with quote and social links -->
     <footer>
+        <!-- Random Quote -->
         <div class="quote">
             <span class="quote-text"></span>
             <span class="quote-author"></span>
         </div>
+        <!-- Social Links -->
         <div id="social">
             <a href="https://www.youtube.com" target="_blank" aria-label="Find us on Youtube (new tab)"><i class="fa-brands fa-youtube"></i></a>
             <a href="https://www.facebook.com" target="_blank" aria-label="Find us on Facebook (new tab)"><i class="fa-brands fa-facebook"></i></a>
@@ -99,6 +101,7 @@
         </div>
     </footer>
 
+    <!-- Calling the scripts -->
     <script src="assets/js/quiz.js"></script>
     <script src="assets/js/main.js"></script>
     <!-- Importing the fontawesome kit -->
