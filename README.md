@@ -255,7 +255,7 @@ The WAVE web accessibility evaluation tool by WebAIM was used to ensure the webp
 <img src="docs/accessibility/game.jpg">
 </details>
 
-<details><summary>Boards</Summary>
+<details><summary>Contact</Summary>
 <img src="docs/accessibility/contact.jpg">
 </details>
 
@@ -312,8 +312,8 @@ The website was tested on several web browsers to ensure consistency. The browse
 
 
 <details><summary>Screenshots</Summary>
-  <details><summary>Tricks</Summary>
-    <img src="docs/Validation/UserStoryTests/TricksTest.png">
+  <details><summary>Naughts and Crosses</Summary>
+    <img src="docs/features/OsandXs.png">
   </details>
 </details>
 
@@ -324,10 +324,9 @@ The website was tested on several web browsers to ensure consistency. The browse
 | Quiz | Navigate to the Quiz page and play the quiz | Game works as expected | Works as expected |
 
 <details><summary>Screenshots</Summary>
-  <details><summary>Footer</Summary>
-    <img src="docs/Validation/UserStoryTests/FooterTest.png">
+  <details><summary>Quiz Game</Summary>
+    <img src="docs/features/Quiz.png">  
   </details>
-
 </details>
 
 3. As a first time user, I want to contact the developer with feedback
@@ -337,10 +336,9 @@ The website was tested on several web browsers to ensure consistency. The browse
 | Contact Form | Navigate to the Contact page | Fill in the form and it emails the site owner | Works as expected |
 
 <details><summary>Screenshots</Summary>
-  <details><summary>Boards</Summary>
-    <img src="docs/Validation/UserStoryTests/BoardsTest.png">
+  <details><summary>Contact Form</Summary>
+    <img src="docs/features/ContactForm.png">  
   </details>
-
 </details>
 
 4. As a first time user, I want to be able to save my hiscores
@@ -350,10 +348,10 @@ The website was tested on several web browsers to ensure consistency. The browse
 | Saving and Showing Hiscores | On the Quiz page either before or after completing quiz, press the Hiscores or Add Hiscores buton | Save and show hiscores | Works as expected |
 
 <details><summary>Screenshots</Summary>
-  <details><summary>Tricks</Summary>
-    <img src="docs/Validation/UserStoryTests/TricksTest.png">
+  <details><summary>Saving and Showing Hiscores</Summary>
+    <img src="docs/features/Hiscores.png"> 
+    <img src="docs/features/Hiscores2.png"> 
   </details>
-
 </details>
 
 5. As a first time user, I want to be able to navigate the site easily
@@ -364,11 +362,11 @@ The website was tested on several web browsers to ensure consistency. The browse
 | Hamburger Menu | At the top of every page when the screen width is < 501px | See the hamburger menu and interact with it | Works as expected |
 
 <details><summary>Screenshots</Summary>
-  <details><summary>Tricks</Summary>
-    <img src="docs/Validation/UserStoryTests/TricksTest.png">
+  <details><summary>Header</Summary>
+    <img src="docs/features/Header.png">  
   </details>
-  <details><summary>Tricks Videos</Summary>
-    <img src="docs/Validation/UserStoryTests/TricksVideosTest.png">
+  <details><summary>Hamburger</Summary>
+    <img src="docs/features/Hamburger.png">  
   </details>
 </details>
 
@@ -380,7 +378,7 @@ The website was tested on several web browsers to ensure consistency. The browse
 
 <details><summary>Screenshots</Summary>
   <details><summary>Contact Form</Summary>
-    <img src="docs/Validation/UserStoryTests/ContactFormTest.png"> 
+    <img src="docs/features/ContactForm.png">  
   </details>
 </details>
 
@@ -391,11 +389,10 @@ The website was tested on several web browsers to ensure consistency. The browse
 | Saving and Showing Hiscores | On the Quiz page either before or after completing quiz, press the Hiscores or Add Hiscores buton | Save and show hiscores | Works as expected |
 
 <details><summary>Screenshots</Summary>
-  <details><summary>Why Choose Us?</Summary>
-    <img src="docs/Validation/UserStoryTests/WhyChooseUsTestStep1.png">
-    <img src="docs/Validation/UserStoryTests/WhyChooseUsTestStep2.png">
+  <details><summary>Saving and Showing Hiscores</Summary>
+    <img src="docs/features/Hiscores.png"> 
+    <img src="docs/features/Hiscores2.png"> 
   </details>
-  
 </details>
 
 8. As a returning user, I want to be able to play easily across my devices
@@ -409,14 +406,20 @@ The website was tested on several web browsers to ensure consistency. The browse
 | Naughts and Crosses | Navigate to the Game page and play the game | Game works as expected | Works as expected |
 
 <details><summary>Screenshots</Summary>
-  <details><summary>Header</Summary>
-    <img src="docs/Validation/UserStoryTests/HeaderTest.png">
+  <details><summary>Hamburger</Summary>
+    <img src="docs/features/Hamburger.png">  
   </details>
   <details><summary>Footer</Summary>
-    <img src="docs/Validation/UserStoryTests/FooterTest.png">
+    <img src="docs/features/Footer.png">  
   </details>
-  <details><summary>404</Summary>
-    <img src="docs/Validation/UserStoryTests/404Test.png">
+  <details><summary>Random Quote</Summary>
+    <img src="docs/features/Quote.png">  
+  </details>
+  <details><summary>Quiz Game</Summary>
+    <img src="docs/features/Quiz.png">  
+  </details>
+  <details><summary>Naughts and Crosses</Summary>
+    <img src="docs/features/OsandXs.png">
   </details>
 </details>
 
@@ -428,14 +431,11 @@ The website was tested on several web browsers to ensure consistency. The browse
 | Naughts and Crosses | Navigate to the Game page and play the game | Game works as expected | Works as expected |
 
 <details><summary>Screenshots</Summary>
-  <details><summary>Contact Form</Summary>
-    <img src="docs/Validation/UserStoryTests/ContactFormTest.png">
+  <details><summary>Quiz Game</Summary>
+    <img src="docs/features/Quiz.png">  
   </details>
-  <details><summary>Google Map</Summary>
-    <img src="docs/Validation/UserStoryTests/GoogleMapTest.png">
-  </details>
-  <details><summary>Address</Summary>
-    <img src="docs/Validation/UserStoryTests/AddressTest.png">
+  <details><summary>Naughts and Crosses</Summary>
+    <img src="docs/features/OsandXs.png">
   </details>
 </details>
 
@@ -446,11 +446,9 @@ The website was tested on several web browsers to ensure consistency. The browse
 | Saving and Showing Hiscores | On the Quiz page either before or after completing quiz, press the Hiscores or Add Hiscores buton | Save and show hiscores | Works as expected |
 
 <details><summary>Screenshots</Summary>
-  <details><summary>Tricks</Summary>
-    <img src="docs/Validation/UserStoryTests/TricksTest.png">
-  </details>
-  <details><summary>Tricks Videos</Summary>
-    <img src="docs/Validation/UserStoryTests/TricksVideosTest.png">
+  <details><summary>Saving and Showing Hiscores</Summary>
+    <img src="docs/features/Hiscores.png"> 
+    <img src="docs/features/Hiscores2.png"> 
   </details>
 </details>
 
@@ -461,11 +459,8 @@ The website was tested on several web browsers to ensure consistency. The browse
 | 404 Page | Anything goes wrong, or you miss type the url | See the 404 Page | Works as expected |
 
 <details><summary>Screenshots</Summary>
-  <details><summary>Google Map</Summary>
-    <img src="docs/Validation/UserStoryTests/GoogleMapTest.png">
-  </details>
-  <details><summary>Address</Summary>
-    <img src="docs/Validation/UserStoryTests/AddressTest.png">
+  <details><summary>404 Page</Summary>
+    <img src="docs/features/404.png">  
   </details>
 </details>
 
@@ -478,11 +473,14 @@ The website was tested on several web browsers to ensure consistency. The browse
 | 404 Page | Anything goes wrong, or you miss type the url | See the 404 Page | Works as expected |
 
 <details><summary>Screenshots</Summary>
-  <details><summary>Boards</Summary>
-    <img src="docs/Validation/UserStoryTests/BoardsTest.png">
+  <details><summary>Footer</Summary>
+    <img src="docs/features/Footer.png">  
   </details>
-  <details><summary>Products</Summary>
-    <img src="docs/Validation/UserStoryTests/ProductsTest.png">
+  <details><summary>Random Quote</Summary>
+    <img src="docs/features/Quote.png">  
+  </details>
+  <details><summary>404 Page</Summary>
+    <img src="docs/features/404.png">  
   </details>
 </details>
 
@@ -490,10 +488,9 @@ The website was tested on several web browsers to ensure consistency. The browse
 
 | **Bug** | **Fix** |
 |---------|---------|
-| Height for most sections wasn't big enough | Removed the max-height value so the height would be as big as the actual content |
-| Grid items and Borders not fitting sizing | Added box-sixing: border-box and everything looked as it should |
-| Padding issue on tricks page for small mobile phone screens | Removed the padding for smaller screen sizes |
-| Social links not directing properly and not opening in a new tab | Corrected all links with http/https, and made them open in new tabs |
+| 404 page wasn't showing correctly | Added 404.md to redirect users |
+| forEach loop for displaying the quiz answers | Assigning them manually was inefficient |
+| Contact form sending email when required fields are empty | Ensured that all relevant inputs aren't empty |
 
 ## Deployment
 
@@ -524,31 +521,13 @@ You can clone a repository by following the steps below.
 
 ### Media
 
-#### Videos
-
-- "How to Ollie in under 4 minutes" Video was taken from Youtube, from the creator "CCS"
-- "How to Shuvit & Pop Shuvit | In-Depth Trick Tip | Tactics" Video was taken from Youtube, from the creator "Tactics Boardshop"
-- "HOW TO FS 180" Video was taken from Youtube, from the creator "Jonny Giger"
-- "How to Kickflip in 5 minutes" Video was taken from Youtube, from the creator "CCS"
-- "How to Heelflip" Video was taken from Youtube, from the creator "Jonny Giger"
-
-#### Images
-
-- "main-hero-image-new.jpg" by "Salvio Bhering" on Pexels
-- "404.jpg" by "Erik McLean" on Pexels
-- "board1.jpg" from "Vol.1 Checker Skateboard Deck (black and white)" on SkatePro.uk
-- "board2.jpg" from "Vol.1 Checker Skateboard Deck (purple and black)" on SkatePro.uk
-- "board3.jpg" from "Vol.1 Tie-Dye Skateboard Deck" on SkatePro.uk
-- "board4.jpg" from "Blue Baker Signature Deck" on SkatePro.uk
-- "board5.jpg" from "Red Baker Signature Deck" on SkatePro.uk
-- "board6.jpg" from "Green Baker Signature Deck" on SkatePro.uk
-
 ### Code
 
-- HTML: For the interactive google map was taken from google maps.
+- Some CSS and JS: WebDev Simplified's tutorial for making a tic tac toe game 
 - HTML: "i" tags with the icons and the social media link icons were all imported from FontAwesome.
-- CSS: The font "Quicksand" was imported from Google Fonts.
-- HTML: The embedded youtube videos' code was edited to fit my site, but originally from Youtube.
+- CSS: The font "Orbitron" was imported from Google Fonts.
+- JS: Used EmailJS for emailing the contents of the user form to my email address.
+- JS: Used Quotables api for the random quotes.
 
 ## Acknowledgements
 
