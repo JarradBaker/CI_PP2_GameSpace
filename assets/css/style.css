@@ -87,6 +87,9 @@ header nav .hamburger {
     color: #0000FF;
 }
 
+/*************************/
+/*         Footer        */
+/*************************/
 footer {
     color: black;
     background-color: #FFFFFF;
@@ -252,7 +255,6 @@ footer #social a:hover {
 }
 
 #main-quiz #answer-buttons {
-    /* border: solid black 2px; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 15vh;
@@ -385,7 +387,6 @@ footer #social a:hover {
     position: relative;
 }
 
-
 /* 
 Referred to code from Web Dev Simplified 
 on youtube for the x and o classes 
@@ -494,8 +495,9 @@ on youtube for the x and o classes
 }
 
 
-
-/* MEDIA QUERIES */
+/*************************/
+/*     Media Queries     */
+/*************************/
 /* mobile */
 @media screen and (max-width: 500px) {
     header nav .hamburger {
