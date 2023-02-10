@@ -472,6 +472,25 @@ on youtube for the x and o classes
     height: 90vh;
     background-color: #f5eec2;
     color: #980707;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-404 h1, 
+#main-404 p {
+    padding: 15px;
+    text-align: center;
+}
+
+#main-404 p {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+#main-404 button {
+    padding: 10px;
 }
 
 
