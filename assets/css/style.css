@@ -516,8 +516,8 @@ on youtube for the x and o classes
 
     header nav .grid-wrapper .nav-links li {
         width: 100%;
-        background-color: #2C7806;
-        border: solid 5px #2C7806;
+        background-color: #000000;
+        border: solid 5px #000000;
         justify-content: center;
         padding: 1rem;
     }
