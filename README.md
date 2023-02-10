@@ -220,7 +220,7 @@ The website contains 5 pages including the 404 page, and a total of 13 features
 - Explains what the issue is
 - User Stories: 11, 12
 <details><summary>404 Page</Summary>
-<img src="docs/features/404page.png">  
+<img src="docs/features/404.png">  
 </details>
 
 ## Validation
@@ -235,7 +235,7 @@ game.html(Naughts and Crosses) - [results](https://validator.w3.org/nu/?doc=http
 
 contact.html(Contact Form) - [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjarradbaker.github.io%2FCI_PP2_GameSpace%2Fcontact.html) - No errors or warnings
 
-404.html(404 page) - 
+404.html(404 page) - [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjarradbaker.github.io%2FCI_PP2_GameSpace%2F404.html) - No errors or warnings
 
 ### CSS Validation
 
@@ -248,19 +248,19 @@ CSS [results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fja
 The WAVE web accessibility evaluation tool by WebAIM was used to ensure the webpages met accessibility standards. All 5 pages passed without any errors.
 
 <details><summary>Index(quiz)</Summary>
-<img src="docs/accessibility/index.png">
+<img src="docs/accessibility/index.jpg">
 </details>
 
 <details><summary>Game</Summary>
-<img src="docs/accessibility/game.PNG">
+<img src="docs/accessibility/game.jpg">
 </details>
 
 <details><summary>Boards</Summary>
-<img src="docs/accessibility/contact.PNG">
+<img src="docs/accessibility/contact.jpg">
 </details>
 
 <details><summary>404</Summary>
-<img src="docs/Validation/Accessibility/404.PNG">
+<img src="docs/Validation/Accessibility/404.jpg">
 </details>
 
 ### Performance
@@ -268,19 +268,19 @@ The WAVE web accessibility evaluation tool by WebAIM was used to ensure the webp
 The Google Lighthouse tool, within the Google Chrome Developer Tools was used to ensure that each page met a high performance rating. This shows that the website will load efficiently over various devices.
 
 <details><summary>Index(quiz)</Summary>
-<img src="docs/performance/index.png">
+<img src="docs/performance/index.jpg">
 </details>
 
 <details><summary>Game</Summary>
-<img src="docs/performance/game.png">
+<img src="docs/performance/game.jpg">
 </details>
 
 <details><summary>Contact</Summary>
-<img src="docs/performance/contact.png">
+<img src="docs/performance/contact.jpg">
 </details>
 
 <details><summary>404</Summary>
-<img src="docs/performance/404.png">
+<img src="docs/performance/404.jpg">
 </details>
 
 ### Performance tests on various devices
