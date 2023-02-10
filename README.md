@@ -83,8 +83,9 @@ The website is designed with the following target audience in mind:
 
 #### Site Owner
 9. As a site owner, I want users to be able to play the games
-14. As a site owner, I want users to be able to save, and show their hiscores
-15. As a site owner, I want users to be able to see a 404 page if anything goes wrong
+10. As a site owner, I want users to be able to save, and show their hiscores
+11. As a site owner, I want users to be able to see a 404 page if anything goes wrong
+12. As a site owner, I want users to have a good experience.
 
 ## Design
 
@@ -147,7 +148,7 @@ The website contains 5 pages including the 404 page, and a total of 13 features
 - Shows on every page when not on mobile
 - Enables easy and smooth navigation
 - The current page is highlighted in blue
-- User Stories: 8, 14
+- User Stories: 5
 <details><summary>Header</Summary>
 <img src="docs/features/Header.png">  
 </details>
@@ -156,7 +157,7 @@ The website contains 5 pages including the 404 page, and a total of 13 features
 - Shows on every page when on mobile
 - Clicking it shows the nav links
 - Enables easy and smooth navigation
-- User Stories: 8, 14
+- User Stories: 5, 8
 <details><summary>Hamburger</Summary>
 <img src="docs/features/Hamburger.png">  
 </details>
@@ -164,7 +165,7 @@ The website contains 5 pages including the 404 page, and a total of 13 features
 ### Footer
 - Shows on every page like the header
 - The social links also stack underneath the copyright text on smaller screens
-- User Stories: 2, 8, 14
+- User Stories: 2, 8, 12
 <details><summary>Footer</Summary>
 <img src="docs/features/Footer.png">  
 </details>
@@ -173,7 +174,7 @@ The website contains 5 pages including the 404 page, and a total of 13 features
 - Shows on every page
 - Is a part of the footer
 - Shows a random quote
-- User Stories: 8, 14
+- User Stories: 8, 12
 <details><summary>Random Quote</Summary>
 <img src="docs/features/Quote.png">  
 </details>
@@ -181,7 +182,7 @@ The website contains 5 pages including the 404 page, and a total of 13 features
 ### Quiz Game
 - Provides one of the games for the user
 - Allows them to interact with the site
-- User Stories: 1, 4, 5, 10, 16
+- User Stories: 2, 8, 9
 <details><summary>Quiz Game</Summary>
 <img src="docs/features/Quiz.png">  
 </details>
@@ -190,7 +191,7 @@ The website contains 5 pages including the 404 page, and a total of 13 features
 - Built in to the quiz game
 - Allows players to save their score
 - Allows returning players to see their Hiscores
-- User Stories: 14
+- User Stories: 4, 7, 10
 <details><summary>Saving and Showing Hiscores</Summary>
 <img src="docs/features/Hiscores.png"> 
 <img src="docs/features/Hiscores2.png"> 
@@ -200,7 +201,7 @@ The website contains 5 pages including the 404 page, and a total of 13 features
 - Provides the other game for the user and a friend
 - Two player game
 - Has a button to reset the game
-- User Stories: 1, 7, 13
+- User Stories: 1, 8, 9
 <details><summary>Naughts and Crosses</Summary>
 <img src="docs/features/OsandXs.png">  
 </details>
@@ -209,7 +210,7 @@ The website contains 5 pages including the 404 page, and a total of 13 features
 - Allows users to contact the site owner/developer
 - Can be used to provide feedback/suggest improvements
 - Located on the contact page
-- User Stories: 6, 9
+- User Stories: 3, 6
 <details><summary>Contact Form</Summary>
 <img src="docs/features/ContactForm.png">  
 </details>
@@ -217,7 +218,7 @@ The website contains 5 pages including the 404 page, and a total of 13 features
 ### 404 page
 - Redirects the user to a working page
 - Explains what the issue is
-- User Stories: 8, 15
+- User Stories: 11, 12
 <details><summary>404 Page</Summary>
 <img src="docs/features/404page.png">  
 </details>
@@ -303,92 +304,58 @@ The website was tested on several web browsers to ensure consistency. The browse
 <!-- Finished here -->
 ### Testing User Stories
 
-1. As a first time user, I want to understand the product
+1. As a first time user, I want to be able to play Naughts and Crosses
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Tricks | Navigate to the Tricks page and find any Trick | See the tricks | Works as expected |
-| Trick Videos | Navigate to the Tricks page and find any Trick Video | See the trick videos | Works as expected |
-| Why Choose Us? | Navigate to the Home page and scoll down | See the Why Choose Us? section | Works as expected |
-| Boards | Navigate to the Boards page | See the page containing all the products | Works as expected |
-| Products | Navigate to the Boards page, and scroll down | See all of the products available | Works as expected |
+| Naughts and Crosses | Navigate to the Game page and play the game | Game works as expected | Works as expected |
+
 
 <details><summary>Screenshots</Summary>
   <details><summary>Tricks</Summary>
     <img src="docs/Validation/UserStoryTests/TricksTest.png">
   </details>
-  <details><summary>Tricks Videos</Summary>
-    <img src="docs/Validation/UserStoryTests/TricksVideosTest.png">
-  </details>
-  <details><summary>Why Choose Us?</Summary>
-    <img src="docs/Validation/UserStoryTests/WhyChooseUsTestStep1.png">
-    <img src="docs/Validation/UserStoryTests/WhyChooseUsTestStep2.png">
-  </details>
-  <details><summary>Boards</Summary>
-    <img src="docs/Validation/UserStoryTests/BoardsTest.png">
-  </details>
-  <details><summary>Products</Summary>
-    <img src="docs/Validation/UserStoryTests/ProductsTest.png">
-  </details>
 </details>
 
-2. As a first time user, I want to learn about the company
+2. As a first time user, I want to be able to play a quiz
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Footer | Scroll down to the bottom of any page | See the social links | Works as expected |
-| History | Navigate to the Home page and scroll down to the bottom | See the History of Skate Shack section | Works as expected |
-| Google Map | Navigate to the Contact page | See the Google Map | Works as expected |
-| Address | Navigate to the Contact page | See the Address above the Google Map | Works as expected |
+| Quiz | Navigate to the Quiz page and play the quiz | Game works as expected | Works as expected |
 
 <details><summary>Screenshots</Summary>
   <details><summary>Footer</Summary>
     <img src="docs/Validation/UserStoryTests/FooterTest.png">
   </details>
-  <details><summary>History</Summary>
-    <img src="docs/Validation/UserStoryTests/HistoryTestStep1.png">
-    <img src="docs/Validation/UserStoryTests/HistoryTestStep2.png">
-  </details>
-  <details><summary>Google Map</Summary>
-    <img src="docs/Validation/UserStoryTests/GoogleMapTest.png">
-  </details>
-  <details><summary>Address</Summary>
-    <img src="docs/Validation/UserStoryTests/AddressTest.png">
-  </details>
+
 </details>
 
-3. As a first time user, I want to know how much the product costs
+3. As a first time user, I want to contact the developer with feedback
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Boards | Navigate to the Boards page | See the page containing all the products | Works as expected |
-| Products | Navigate to the Boards page, and scroll down | See all of the products available | Works as expected |
+| Contact Form | Navigate to the Contact page | Fill in the form and it emails the site owner | Works as expected |
 
 <details><summary>Screenshots</Summary>
   <details><summary>Boards</Summary>
     <img src="docs/Validation/UserStoryTests/BoardsTest.png">
   </details>
-  <details><summary>Products</Summary>
-    <img src="docs/Validation/UserStoryTests/ProductsTest.png">
-  </details>
+
 </details>
 
-4. As a first time user, I want to learn more about skateboarding
+4. As a first time user, I want to be able to save my hiscores
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Tricks | Navigate to the Tricks page and find any Trick | See the tricks | Works as expected |
-| Trick Videos | Navigate to the Tricks page and find any Trick Video | See the trick videos | Works as expected |
+| Saving and Showing Hiscores | On the Quiz page either before or after completing quiz, press the Hiscores or Add Hiscores buton | Save and show hiscores | Works as expected |
 
 <details><summary>Screenshots</Summary>
   <details><summary>Tricks</Summary>
     <img src="docs/Validation/UserStoryTests/TricksTest.png">
   </details>
-  <details><summary>Tricks Videos</Summary>
-    <img src="docs/Validation/UserStoryTests/TricksVideosTest.png">
-  </details>
-</details>
 
+</details>
+<!-- HERERERERE -->
 5. As a first time user, I want to learn how to use the product
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
