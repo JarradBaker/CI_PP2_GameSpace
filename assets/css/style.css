@@ -490,8 +490,12 @@ on youtube for the x and o classes
     font-weight: bold;
 }
 
-#main-404 button {
-    padding: 10px;
+#main-404 a {
+    text-decoration: none;
+    color: #0000FF;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 
